@@ -1,22 +1,35 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { FAQAccordion } from "@/components/faq-accordion";
-import { CTASection } from "@/components/cta-section";
 import { StatsGrid } from "@/components/stats-grid";
 import { WaveBackground } from "@/components/wave-background";
+import { LogoCarousel } from "@/components/logo-carousel";
+import { ContactForm } from "@/components/contact-form";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import { services, getServicesByCategory } from "@/content/services";
-import { stats, howItWorks, testimonials, faqs } from "@/content/site";
+import { stats, howItWorks, testimonials, faqs, siteConfig } from "@/content/site";
 
 export default function HomePage() {
   const beforeArrivalServices = getServicesByCategory("before-arrival");
   const onArrivalServices = getServicesByCategory("on-arrival");
   const settlingInServices = getServicesByCategory("settling-in");
+
+  const handleWhatsApp = () => {
+    if (typeof window !== "undefined") {
+      window.open(
+        `https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`,
+        "_blank"
+      );
+    }
+  };
 
   return (
     <>
@@ -26,7 +39,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full">
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-yellow-400 dark:bg-yellow-500 rounded-full" style={{ border: '2px solid #DC2626' }}>
-                <p className="text-sm font-medium text-red-600 dark:text-red-900">8 Years of Experience</p>
+                <p className="text-sm font-medium text-red-600 dark:text-red-900">Your gateway to universities in Spain</p>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground font-heading leading-tight">
                 We go above and beyond so you don&apos;t have to worry about anything.
@@ -65,8 +78,8 @@ export default function HomePage() {
                       <CheckCircle2 className="h-4 w-4 md:h-6 md:w-6 text-red-600" />
                     </div>
                     <div>
-                      <p className="font-semibold text-sm md:text-lg text-white">8 Years</p>
-                      <p className="text-xs md:text-sm text-yellow-100">of Excellence</p>
+                      <p className="font-semibold text-xs md:text-sm text-white">Your gateway to</p>
+                      <p className="text-xs md:text-sm text-yellow-100">universities in Spain</p>
                     </div>
                   </div>
                 </CardContent>
@@ -80,6 +93,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <LogoCarousel />
 
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -106,6 +121,31 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <SectionHeading
+            title="What Our Students Say"
+            subtitle="Real experiences from students we've helped achieve their dreams"
+            centered
+            className="mb-12"
+          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <TestimonialCard
+                key={index}
+                name={testimonial.name}
+                country={testimonial.country}
+                program={testimonial.program}
+                text={testimonial.text}
+                rating={testimonial.rating}
+                index={index}
+                image={testimonial.image}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <SectionHeading
             title="Our Services"
@@ -251,33 +291,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <SectionHeading
-            title="What Our Students Say"
-            subtitle="Real experiences from students we've helped achieve their dreams"
-            centered
-            className="mb-12"
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                name={testimonial.name}
-                country={testimonial.country}
-                program={testimonial.program}
-                text={testimonial.text}
-                rating={testimonial.rating}
-                index={index}
-              />
-            ))}
-          </div>
-          <p className="text-center text-sm text-muted-foreground italic">
-            Testimonials shown are examples for demonstration purposes.
-          </p>
-        </div>
-      </section>
-
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -292,14 +305,142 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CTASection
-        title="Get your study plan started today"
-        description="Take the first step towards your Spanish education journey"
-        primaryButtonText="Book a Free Consultation"
-        primaryButtonHref="/apply"
-        secondaryButtonText="Contact Us"
-        secondaryButtonHref="/contact"
-      />
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <SectionHeading
+            title="Contact Us"
+            subtitle="We're here to answer your questions and help you start your journey"
+            centered
+            className="mb-12"
+          />
+          
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            <Card>
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Mail className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Email Us</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Send us an email anytime
+                </p>
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="text-sm text-primary hover:underline"
+                >
+                  {siteConfig.email}
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Call Us</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Mon-Fri from 9am to 6pm
+                </p>
+                <a
+                  href={`tel:${siteConfig.phone}`}
+                  className="text-sm text-primary hover:underline"
+                >
+                  {siteConfig.phone}
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-xl bg-green-600/10 flex items-center justify-center mb-4">
+                  <MessageCircle className="h-6 w-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold mb-2">WhatsApp</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Chat with us instantly
+                </p>
+                <Button
+                  onClick={handleWhatsApp}
+                  variant="link"
+                  className="p-0 h-auto text-sm"
+                >
+                  Start Chat
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
+              <p className="text-muted-foreground mb-8">
+                Fill out the form and we&apos;ll get back to you within 24 hours on
+                business days.
+              </p>
+              <ContactForm />
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Visit Our Office</h2>
+              <Card className="mb-6">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Location
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{siteConfig.address}</p>
+                </CardContent>
+              </Card>
+
+              <Card className="mb-6">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Clock className="h-5 w-5 text-primary" />
+                    Office Hours
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{siteConfig.hours}</p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Saturday - Sunday: Closed
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="mb-6">
+                <CardContent className="p-0">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.4837537384773!2d-6.2584!3d31.9454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Morocco!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg"
+                  ></iframe>
+                </CardContent>
+              </Card>
+
+              <div className="p-6 bg-primary/5 rounded-2xl">
+                <h3 className="font-semibold mb-2">Prefer to talk in person?</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Schedule a free consultation at our office. We&apos;ll discuss your
+                  study plans and answer all your questions.
+                </p>
+                <Button asChild>
+                  <Link href="/apply">Book a Consultation</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <WhatsAppButton />
     </>
   );
 }

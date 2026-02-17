@@ -33,9 +33,8 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">Aval</div>
+        <div className="flex items-center justify-between h-10 md:h-12">
+          <Link href="/" className="flex items-center">
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -52,7 +51,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center space-x-3">
             <Button asChild variant="outline">
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
             <Button
               size="icon"
@@ -94,7 +93,7 @@ export function Navbar() {
             <div className="pt-3 space-y-2">
               <Button asChild variant="outline" className="w-full">
                 <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  Contact
+                  Contact Us
                 </Link>
               </Button>
               <Button

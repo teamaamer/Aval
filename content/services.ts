@@ -213,124 +213,6 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "Airport Pickup",
-    slug: "airport-pickup",
-    category: "on-arrival",
-    shortDescription: "Reliable airport transfer service for your arrival in Spain.",
-    iconName: "Plane",
-    image: "/airport-pickup.jpg",
-    longDescription: "Start your Spanish journey stress-free with our reliable airport pickup service. We'll be there to welcome you when you land, help with your luggage, and transport you safely to your accommodation.",
-    bullets: [
-      "Meet and greet at arrivals hall",
-      "Assistance with luggage",
-      "Comfortable, air-conditioned vehicles",
-      "Direct transfer to your accommodation",
-      "Flexible scheduling for any arrival time",
-      "Local orientation during the drive",
-    ],
-    requirements: [
-      "Flight details (airline, flight number, arrival time)",
-      "Accommodation address in Spain",
-      "Contact number (local or WhatsApp)",
-      "Number of passengers and luggage pieces",
-    ],
-    timelineSteps: [
-      {
-        title: "Booking",
-        description: "Reserve your pickup at least 48 hours before arrival.",
-        duration: "2 days before",
-      },
-      {
-        title: "Confirmation",
-        description: "Receive driver details and contact information.",
-        duration: "1 day before",
-      },
-      {
-        title: "Arrival",
-        description: "Driver meets you at arrivals with a name sign.",
-        duration: "Arrival day",
-      },
-      {
-        title: "Transfer",
-        description: "Comfortable ride to your accommodation.",
-        duration: "30-60 minutes",
-      },
-    ],
-    faqs: [
-      {
-        question: "What if my flight is delayed?",
-        answer: "We monitor all flights in real-time. If your flight is delayed, your driver will adjust accordingly at no extra charge.",
-      },
-      {
-        question: "Is the service available 24/7?",
-        answer: "Yes, we provide pickup service for arrivals at any time, day or night.",
-      },
-      {
-        question: "What if I can't find the driver?",
-        answer: "Your driver will be at the arrivals hall with a sign bearing your name. You'll also receive their phone number for direct contact if needed.",
-      },
-    ],
-  },
-  {
-    title: "Writing CV",
-    slug: "writing-cv",
-    category: "before-arrival",
-    shortDescription: "Professional CV writing tailored for Spanish employers and universities.",
-    iconName: "FileEdit",
-    image: "/writing-cv.jpg",
-    longDescription: "Make a strong first impression with a professionally crafted CV. Our experts understand what Spanish universities and employers look for, and we'll help you present your qualifications effectively.",
-    bullets: [
-      "Professional CV writing and formatting",
-      "Tailored to Spanish standards and expectations",
-      "Highlighting relevant skills and experiences",
-      "Multiple revisions until you're satisfied",
-      "Both Spanish and English versions available",
-      "Cover letter writing included",
-    ],
-    requirements: [
-      "Current CV or resume (any format)",
-      "List of your education, work experience, and skills",
-      "Target position or program information",
-      "Any specific requirements from the university/employer",
-    ],
-    timelineSteps: [
-      {
-        title: "Information Gathering",
-        description: "Share your background and target opportunities.",
-        duration: "Day 1",
-      },
-      {
-        title: "First Draft",
-        description: "Receive your professionally written CV draft.",
-        duration: "Day 3-4",
-      },
-      {
-        title: "Review & Revisions",
-        description: "Provide feedback and request any changes.",
-        duration: "Day 5-6",
-      },
-      {
-        title: "Final Delivery",
-        description: "Receive your polished CV in multiple formats.",
-        duration: "Day 7",
-      },
-    ],
-    faqs: [
-      {
-        question: "What's the difference between a Spanish and international CV?",
-        answer: "Spanish CVs typically include a photo, date of birth, and nationality. The format and emphasis on certain qualifications also differ. We ensure your CV meets local expectations.",
-      },
-      {
-        question: "Do you write CVs in Spanish?",
-        answer: "Yes, we provide CV writing services in both Spanish and English, depending on your needs.",
-      },
-      {
-        question: "Can you update my existing CV?",
-        answer: "Absolutely! We can review and improve your current CV or create a new one from scratch.",
-      },
-    ],
-  },
-  {
     title: "Sworn Translations",
     slug: "sworn-translations",
     category: "before-arrival",
@@ -721,18 +603,14 @@ export const services: Service[] = [
     shortDescription: "Additional support services for your academic and personal success.",
     iconName: "MoreHorizontal",
     image: "/other-1.jpg",
-    longDescription: "Beyond our core services, we offer comprehensive support for various academic and administrative needs. From PhD support to research assistance, we're here to help you succeed in every aspect of your Spanish education journey.",
+    longDescription: "Beyond our core services, we offer comprehensive support for various academic and administrative needs. From airport pickup to expert academic solutions, we're here to help you succeed in every aspect of your Spanish education journey.",
     bullets: [
-      "Academic support for PhD students",
-      "Research plan and proposal preparation",
-      "Annual plan development",
-      "Motivation letter writing",
-      "Research methodology guidance",
-      "Academic writing support",
-      "Bank account opening assistance",
-      "Mobile phone and SIM card setup",
-      "Public transport registration",
-      "Cultural orientation sessions",
+      "Airport Pickup (Valencia and Madrid) - Safe and reliable transportation from the airport to your accommodation",
+      "CV/Resume Writing - Professional, ATS-friendly designs that highlight your achievements",
+      "Research Assistance - Navigating complex academic projects with comprehensive support throughout your research journey, ensuring clarity, depth, and academic rigor",
+      "Proofreading & Editing - Ensure your work is error-free and impactful. Our editing services go beyond grammar to improve flow, clarity, and tone",
+      "Motivation Letters & Statements of Purpose - Your grades show what you know, but your motivation letter shows who you are. We help you craft a compelling narrative that proves to the admissions committee why you are the perfect candidate for their program",
+      "Expert Academic Solutions for all your needs",
     ],
     requirements: [
       "Varies by specific service needed",
@@ -766,8 +644,8 @@ export const services: Service[] = [
         answer: "Yes! We provide many additional services based on student needs. Contact us to discuss any specific requirements you have.",
       },
       {
-        question: "Can you help with PhD applications?",
-        answer: "Absolutely. We offer specialized support for PhD applicants, including research proposal development, supervisor identification, and application preparation.",
+        question: "What cities do you provide airport pickup service?",
+        answer: "We currently provide airport pickup services in Valencia and Madrid. Contact us if you need pickup from other locations.",
       },
       {
         question: "Do you provide ongoing support after arrival?",

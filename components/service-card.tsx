@@ -34,29 +34,31 @@ export function ServiceCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Card className="h-full hover:shadow-lg transition-shadow duration-300 group overflow-hidden">
+      <Card className="h-full hover:shadow-lg transition-shadow duration-300 group overflow-hidden flex flex-col">
         {image && (
-          <div className="relative w-full h-48 overflow-hidden">
+          <div className="relative w-full h-40 overflow-hidden flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: '#FE0000' }}>
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
             />
           </div>
         )}
-        <CardHeader>
-          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-            <Icon className="h-6 w-6 text-primary" />
+        <CardHeader className="pb-2 pt-4 px-4 flex-grow">
+          <div className="flex items-start gap-3 mb-2">
+            <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+              <Icon className="h-4 w-4 text-primary" />
+            </div>
+            <CardTitle className="text-base leading-tight">{title}</CardTitle>
           </div>
-          <CardTitle className="text-xl">{title}</CardTitle>
-          <CardDescription>{description}</CardDescription>
+          <CardDescription className="text-xs line-clamp-2">{description}</CardDescription>
         </CardHeader>
-        <CardContent>
-          <Button asChild variant="ghost" className="group/btn p-0 h-auto">
-            <Link href={href} className="flex items-center text-primary">
+        <CardContent className="pt-0 pb-4 px-4">
+          <Button asChild variant="ghost" className="group/btn p-0 h-auto w-full justify-start">
+            <Link href={href} className="flex items-center text-primary text-xs">
               Learn more
-              <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-1 h-3 w-3 group-hover/btn:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </CardContent>

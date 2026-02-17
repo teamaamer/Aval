@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { navigation } from "@/content/site";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { useState } from 'react';
+import { navigation } from '@/content/site';
+import { ThemeToggle } from '@/components/theme-toggle';
 import {
   Navbar,
   NavBody,
@@ -13,10 +13,10 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
-} from "@/components/ui/resizable-navbar";
+} from '@/components/ui/resizable-navbar';
 
 export function NavbarWrapper() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = navigation.map((item) => ({
     name: item.name,
@@ -26,16 +26,19 @@ export function NavbarWrapper() {
   return (
     <Navbar>
       <NavBody>
-        <NavbarLogo />
-        <NavItems items={navItems} />
-        <div className="flex items-center gap-2 relative z-10">
+        <div className="flex items-center">
+          <NavbarLogo />
+        </div>
+        <div className="flex items-center justify-center">
+          <NavItems items={navItems} />
+        </div>
+        <div className="flex items-center gap-3 justify-end relative z-20">
           <ThemeToggle />
-          <NavbarButton
+          <NavbarButton 
+            href="/apply"
             as="a"
-            href="/contact"
-            variant="primary"
           >
-            Contact
+            Book Consultation
           </NavbarButton>
         </div>
       </NavBody>
@@ -45,37 +48,28 @@ export function NavbarWrapper() {
           <NavbarLogo />
           <div className="flex items-center gap-2">
             <ThemeToggle />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
+            <MobileNavToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
           </div>
         </MobileNavHeader>
-        <MobileNavMenu
-          isOpen={isMobileMenuOpen}
-          onClose={() => setIsMobileMenuOpen(false)}
-        >
+        <MobileNavMenu isOpen={isOpen} onClose={() => setIsOpen(false)}>
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full text-left px-4 py-3 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              onClick={() => setIsOpen(false)}
+              className="text-lg font-medium text-foreground hover:text-primary transition-colors w-full text-left"
             >
               {item.name}
             </a>
           ))}
-          <div className="w-full border-t pt-4">
-            <NavbarButton
-              as="a"
-              href="/contact"
-              variant="primary"
-              className="w-full"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Contact
-            </NavbarButton>
-          </div>
+          <NavbarButton
+            href="/apply"
+            as="a"
+            onClick={() => setIsOpen(false)}
+            className="w-full mt-4"
+          >
+            Book Consultation
+          </NavbarButton>
         </MobileNavMenu>
       </MobileNav>
     </Navbar>

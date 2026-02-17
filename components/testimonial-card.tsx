@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 interface TestimonialCardProps {
   name: string;
@@ -11,6 +12,7 @@ interface TestimonialCardProps {
   text: string;
   rating: number;
   index?: number;
+  image?: string;
 }
 
 export function TestimonialCard({
@@ -20,6 +22,7 @@ export function TestimonialCard({
   text,
   rating,
   index = 0,
+  image,
 }: TestimonialCardProps) {
   return (
     <motion.div
@@ -37,11 +40,28 @@ export function TestimonialCard({
               <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
             ))}
           </div>
-          <div>
-            <p className="font-semibold text-foreground">{name}</p>
-            <p className="text-sm text-muted-foreground">
-              {program} • {country}
-            </p>
+          <div className="flex items-center gap-3">
+            {image ? (
+              <Image
+                src={image}
+                alt={name}
+                width={58}
+                height={58}
+                className="rounded-full"
+              />
+            ) : (
+              <div className="w-[58px] h-[58px] rounded-full bg-primary/10 flex items-center justify-center">
+                <User className="h-8 w-8 text-primary" />
+              </div>
+            )}
+            <div>
+              <p className="font-semibold text-foreground">{name}</p>
+              {(program || country) && (
+                <p className="text-sm text-muted-foreground">
+                  {[program, country].filter(Boolean).join(" • ")}
+                </p>
+              )}
+            </div>
           </div>
         </CardContent>
       </Card>

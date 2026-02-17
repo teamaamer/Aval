@@ -91,25 +91,28 @@ export const howItWorks = [
 
 export const testimonials = [
   {
-    name: "Ahmed Hassan",
-    country: "Egypt",
-    program: "Business Administration",
-    text: "Aval made my dream of studying in Spain a reality. Their support throughout the visa process was exceptional, and they helped me find the perfect university.",
+    name: "Shatha Arafat",
+    country: "",
+    program: "",
+    text: "I highly recommend Aval Students Service to anyone planning to study in Spain. They supported me through every step of the registration process—from certifying my documents all the way to securing my university acceptance. They were always available to answer my questions and any concerns i have.",
     rating: 5,
+    image: undefined,
   },
   {
-    name: "Maria Silva",
-    country: "Brazil",
-    program: "Computer Science",
-    text: "From application to arrival, the team at Aval was with me every step. They even helped me find accommodation near my university. Highly recommended!",
+    name: "Hamad Al Jazi",
+    country: "",
+    program: "",
+    text: "I received excellent support from AVAL Student Services. The team was responsive, professional, and went above and beyond to help me resolve my issue quickly. I truly appreciate their dedication and highly recommend their services to all students.",
     rating: 5,
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjV6GcE05CGcHIGs0E1QHRkUtUKhLstpwJ8VUn-mLF2QtT2JE-GA=w58-h58-p-rp-mo-br100",
   },
   {
-    name: "Omar Al-Rashid",
-    country: "Saudi Arabia",
-    program: "Engineering",
-    text: "Professional, responsive, and genuinely caring. Aval Student Services exceeded my expectations in every way. The process was smooth and stress-free.",
+    name: "Qais Hammouri",
+    country: "",
+    program: "",
+    text: "An absolutely wonderful experience dealing with AVAL. Everything went smoothly and easily, as they helped me secure a PhD admission to one of the prestigious universities in Spain. I thank the AVAL team for their cooperation, kindness, professionalism, and punctuality.",
     rating: 5,
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjVmi9xAx-Ry1IvaLJQ312msC8A28ATFtGeyr42JFHdu2XRJw4nU=w58-h58-p-rp-mo-br100",
   },
 ];
 
