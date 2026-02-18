@@ -59,7 +59,7 @@
     }
   },
   "testimonials": {
-    "title": "What Our Students Say",
+    "title": "Reviews",
     "subtitle": "Real experiences from students we've helped",
     "items": [
       {
@@ -975,6 +975,8 @@
     ]
   },
   "trustUs": {
-    "title": "They Trust Us"
+    "title": "Reviews",
+    "accreditedBy": "Accredited By",
+    "partners": "Partners"
   }
 }

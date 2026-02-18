@@ -73,23 +73,6 @@ export default function HomePage() {
                   priority
                 />
               </div>
-              <Card className="absolute -bottom-3 -left-3 md:-bottom-6 md:-left-6 bg-red-600 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer" style={{ border: '2px solid #FACC15' }}>
-                <CardContent className="p-3 md:p-6">
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-8 h-8 md:w-12 md:h-12 rounded-full bg-yellow-400 flex items-center justify-center transition-transform duration-300 group-hover:rotate-12">
-                      <CheckCircle2 className="h-4 w-4 md:h-6 md:w-6 text-red-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-xs md:text-sm text-white">{t('hero.badge')}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="absolute -top-3 -right-3 md:-top-6 md:-right-6 bg-red-600 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer" style={{ border: '2px solid #FACC15' }}>
-                <CardContent className="p-2 md:p-4">
-                  <span id='iasBadge' data-account-id='7021'></span>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
@@ -213,62 +196,6 @@ export default function HomePage() {
               <Link href="/services">{t('serviceCategories.viewAll')}</Link>
             </Button>
           </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto px-4">
-          <SectionHeading
-            title={t('studyInSpain.title')}
-            subtitle={t('studyInSpain.subtitle')}
-            centered
-            className="mb-12"
-          />
-          
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">{t('studyInSpain.whySpain.title')}</h3>
-                <p className="text-muted-foreground mb-6">
-                  {t('studyInSpain.whySpain.paragraph1')}
-                </p>
-                <p className="text-muted-foreground">
-                  {t('studyInSpain.whySpain.paragraph2')}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">{t('studyInSpain.universities.title')}</h3>
-                <p className="text-muted-foreground mb-6">
-                  {t('studyInSpain.universities.description')}
-                </p>
-                <Button asChild>
-                  <Link href="/apply">
-                    {t('studyInSpain.universities.cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <SectionHeading
-            title={t('spainByNumbers.title')}
-            subtitle={t('spainByNumbers.subtitle')}
-            centered
-            className="mb-12"
-          />
-          <StatsGrid stats={[0, 1, 2, 3].map(i => ({
-            title: t(`stats.items.${i}.title`),
-            description: t(`stats.items.${i}.description`),
-            icon: t(`stats.items.${i}.icon`)
-          }))} />
         </div>
       </section>
 

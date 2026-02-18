@@ -59,7 +59,7 @@
     }
   },
   "testimonials": {
-    "title": "Lo Que Dicen Nuestros Estudiantes",
+    "title": "Reseñas",
     "subtitle": "Experiencias reales de estudiantes que hemos ayudado",
     "items": [
       {
@@ -616,6 +616,8 @@
     ]
   },
   "trustUs": {
-    "title": "Confían en Nosotros"
+    "title": "Reseñas",
+    "accreditedBy": "Acreditado Por",
+    "partners": "Socios"
   }
 }
