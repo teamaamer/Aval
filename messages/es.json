@@ -1,0 +1,621 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "applyNow": "Solicitar",
+    "services": "Servicios",
+    "universities": "Universidades",
+    "about": "Acerca de",
+    "bookConsultation": "Reservar Consulta"
+  },
+  "hero": {
+    "badge": "Tu puerta de entrada a las universidades en España",
+    "title": "Tu Viaje para Estudiar en España Comienza Aquí",
+    "subtitle": "Guiamos a estudiantes internacionales en cada paso de estudiar en España - desde admisiones universitarias hasta procesamiento de visas y más.",
+    "cta": "Comenzar Tu Solicitud",
+    "learnMore": "Saber Más"
+  },
+  "stats": {
+    "items": [
+      {
+        "title": "Población",
+        "description": "Segundo país más grande de Europa Occidental y quinto más poblado: 504,645 km² y 49,153,849 habitantes",
+        "icon": "Users"
+      },
+      {
+        "title": "Turismo",
+        "description": "España recibió 94 millones de turistas internacionales en 2024, un aumento del 10% en comparación con 2023, marcando el mejor año para el turismo del país",
+        "icon": "Plane"
+      },
+      {
+        "title": "Patrimonio",
+        "description": "No. 3 en el mundo y no. 2 en Europa con respecto al número de Sitios del Patrimonio Mundial de la UNESCO: 45 declarados",
+        "icon": "Landmark"
+      },
+      {
+        "title": "Salud",
+        "description": "España tiene un sistema de salud de alta calidad y sólidos estándares de salud pública, apoyando una experiencia estudiantil segura.",
+        "icon": "Heart"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "Pasos simples para comenzar tu viaje",
+    "step1": {
+      "title": "Consulta",
+      "description": "Reserva una consulta gratuita para discutir tus objetivos y requisitos de estudio."
+    },
+    "step2": {
+      "title": "Preparación de Documentos",
+      "description": "Te guiamos en la recopilación y preparación de todos los documentos necesarios."
+    },
+    "step3": {
+      "title": "Solicitud y Envío",
+      "description": "Manejamos tus solicitudes universitarias y envíos de visa profesionalmente."
+    },
+    "step4": {
+      "title": "Apoyo de Llegada",
+      "description": "Desde recogida en el aeropuerto hasta alojamiento, aseguramos una transición suave a España."
+    }
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Estudiantes",
+    "subtitle": "Experiencias reales de estudiantes que hemos ayudado",
+    "items": [
+      {
+        "name": "Shatha Arafat",
+        "text": "Recomiendo encarecidamente el Servicio de Estudiantes Aval a cualquiera que planee estudiar en España. Me apoyaron en cada paso del proceso de registro, desde certificar mis documentos hasta asegurar mi aceptación universitaria. Siempre estuvieron disponibles para responder mis preguntas y cualquier inquietud que tuviera."
+      },
+      {
+        "name": "Hamad Al Jazi",
+        "text": "Recibí un excelente apoyo de los Servicios para Estudiantes AVAL. El equipo fue receptivo, profesional y fue más allá para ayudarme a resolver mi problema rápidamente. Realmente aprecio su dedicación y recomiendo encarecidamente sus servicios a todos los estudiantes."
+      },
+      {
+        "name": "Qais Hammouri",
+        "text": "Una experiencia absolutamente maravillosa tratando con AVAL. Todo salió sin problemas y fácilmente, ya que me ayudaron a asegurar una admisión de doctorado en una de las prestigiosas universidades de España. Agradezco al equipo de AVAL por su cooperación, amabilidad, profesionalismo y puntualidad."
+      }
+    ]
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Apoyo integral para tu viaje de estudios en el extranjero",
+    "learnMore": "Saber más",
+    "backToServices": "Volver a Servicios",
+    "whatWeHelp": "En Qué Ayudamos",
+    "requirements": "Requisitos",
+    "timeline": "Cronograma del Proceso",
+    "faqs": "Preguntas Frecuentes",
+    "getStarted": "Comenzar",
+    "bookConsultation": "Reservar una Consulta Gratuita",
+    "getStartedToday": "Comienza Hoy",
+    "getStartedDescription": "Completa el formulario a continuación y nos pondremos en contacto contigo dentro de 24 horas para discutir tus necesidades de",
+    "needs": "necesidades",
+    "needMultipleServices": "¿Necesitas Múltiples Servicios?",
+    "multipleServicesDescription": "Ofrecemos paquetes integrales que combinan múltiples servicios a una tarifa con descuento. Contáctanos para obtener más información.",
+    "viewAllServices": "Ver Todos los Servicios",
+    "items": {
+      "student-visa": {
+        "title": "Visa de Estudiante",
+        "description": "Apoyo completo para la solicitud de visa desde la documentación hasta la aprobación.",
+        "shortDescription": "Apoyo completo para la solicitud de visa desde la documentación hasta la aprobación.",
+        "longDescription": "Navegar por el proceso de visa de estudiante español puede ser complejo. Proporcionamos apoyo de principio a fin, asegurando que todos tus documentos estén correctamente preparados y presentados. Nuestro equipo experimentado ha ayudado a cientos de estudiantes a obtener sus visas con éxito.",
+        "bullets": [
+          "Lista completa de documentos y orientación de preparación",
+          "Asistencia y revisión del formulario de solicitud",
+          "Programación de citas en el consulado español",
+          "Preparación para la entrevista y consejos",
+          "Seguimiento de la solicitud y seguimiento",
+          "Opciones de procesamiento exprés cuando estén disponibles"
+        ],
+        "requirements": [
+          "Pasaporte válido (mínimo 6 meses de validez)",
+          "Carta de aceptación universitaria",
+          "Prueba de medios financieros (extractos bancarios)",
+          "Certificado de seguro de salud",
+          "Certificado de antecedentes penales",
+          "Fotografías tamaño pasaporte",
+          "Formulario de solicitud de visa completado"
+        ],
+        "timeline": [
+          {
+            "title": "Consulta Inicial",
+            "description": "Evaluamos tu situación y proporcionamos una hoja de ruta personalizada para la visa.",
+            "duration": "Día 1"
+          },
+          {
+            "title": "Preparación de Documentos",
+            "description": "Recopilar y preparar todos los documentos requeridos con nuestra orientación.",
+            "duration": "Semana 1-2"
+          },
+          {
+            "title": "Presentación de Solicitud",
+            "description": "Presentar tu solicitud en el consulado español con nuestro apoyo.",
+            "duration": "Semana 3"
+          },
+          {
+            "title": "Procesamiento y Seguimiento",
+            "description": "Rastreamos tu solicitud y manejamos cualquier solicitud adicional.",
+            "duration": "Semana 4-8"
+          },
+          {
+            "title": "Recogida de Visa",
+            "description": "Recibe tu visa aprobada y prepárate para la salida.",
+            "duration": "Semana 8-10"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "¿Cuánto tiempo es válida la visa de estudiante?",
+            "answer": "Las visas de estudiante generalmente se emiten por la duración de tu programa, hasta un año inicialmente. Puedes renovar tu permiso de residencia en España para años subsiguientes."
+          },
+          {
+            "question": "¿Puede mi familia acompañarme con una visa de estudiante?",
+            "answer": "Sí, la reunificación familiar es posible después de que hayas estado en España durante un año. Podemos guiarte a través de este proceso cuando llegue el momento."
+          },
+          {
+            "question": "¿Qué pasa si se rechaza mi solicitud de visa?",
+            "answer": "Los rechazos son raros cuando las solicitudes están correctamente preparadas. Si sucede, te ayudaremos a entender las razones y volver a solicitar con correcciones. Nuestra tasa de éxito es superior al 95%."
+          }
+        ]
+      },
+      "spanish-language-courses": {
+        "title": "Cursos de Idioma Español",
+        "description": "Aprende español antes y durante tus estudios en España.",
+        "shortDescription": "Aprende español antes y durante tus estudios en España.",
+        "longDescription": "Domina el español con nuestros cursos integrales diseñados específicamente para estudiantes internacionales. Ya seas un principiante completo o busques mejorar tu fluidez, ofrecemos programas flexibles para adaptarse a tus necesidades.",
+        "bullets": ["Opciones de cursos en línea y presenciales", "Niveles de principiante a avanzado (A1-C2)", "Tamaños de clase pequeños para atención personalizada", "Instructores certificados con experiencia docente", "Actividades de inmersión cultural incluidas", "Preparación oficial del examen DELE"],
+        "requirements": ["No se requiere conocimiento previo de español para cursos de principiantes", "Prueba de nivel para niveles intermedios/avanzados", "Conexión a Internet confiable para cursos en línea", "Compromiso de asistir a clases regularmente"],
+        "timeline": [
+          {"title": "Evaluación de Nivel", "description": "Realiza una prueba de nivel para determinar tu nivel actual.", "duration": "Día 1"},
+          {"title": "Selección de Curso", "description": "Elige el programa que se ajuste a tu horario y objetivos.", "duration": "Día 2-3"},
+          {"title": "Inscripción", "description": "Completa el registro y recibe materiales del curso.", "duration": "Día 4-5"},
+          {"title": "Viaje de Aprendizaje", "description": "Asiste a clases y practica con hablantes nativos.", "duration": "4-12 semanas"},
+          {"title": "Certificación", "description": "Recibe tu certificado de finalización del curso.", "duration": "Última semana"}
+        ],
+        "faqs": [
+          {"question": "¿Necesito saber español para estudiar en España?", "answer": "Muchos programas se ofrecen en inglés, pero conocer español mejora enormemente tu experiencia y abre más oportunidades. Recomendamos al menos un dominio básico del español."},
+          {"question": "¿Cuánto tiempo lleva volverse conversacional?", "answer": "Con estudio constante, la mayoría de los estudiantes alcanzan el nivel conversacional (B1) en 6-9 meses. Los cursos intensivos pueden acelerar este cronograma."},
+          {"question": "¿Los cursos están reconocidos oficialmente?", "answer": "Sí, nuestros cursos están alineados con el Marco Común Europeo (MCER) y ofrecemos preparación para el examen DELE para certificación oficial."}
+        ]
+      },
+      "university-admissions": {
+        "title": "Admisiones Universitarias",
+        "description": "Orientación experta a través del proceso de solicitud universitaria.",
+        "shortDescription": "Orientación experta a través del proceso de solicitud universitaria.",
+        "longDescription": "Obtén admisión a las mejores universidades españolas con nuestra orientación experta. Te ayudamos a identificar los mejores programas para tus objetivos, preparar solicitudes convincentes y navegar todo el proceso de admisión de principio a fin.",
+        "bullets": ["Consulta de selección de universidad y programa", "Estrategia de solicitud y planificación de cronograma", "Revisión de declaración personal y ensayos", "Evaluación y traducción de credenciales académicas", "Presentación y seguimiento de solicitudes", "Orientación sobre becas y financiamiento"],
+        "requirements": ["Diploma de secundaria o licenciatura (según el nivel del programa)", "Transcripciones y certificados académicos", "Prueba de competencia lingüística (español o inglés)", "Cartas de recomendación", "Declaración personal o carta de motivación", "CV/Currículum"],
+        "timeline": [
+          {"title": "Evaluación de Perfil", "description": "Evaluar tu formación académica y objetivos profesionales.", "duration": "Semana 1"},
+          {"title": "Selección de Universidad", "description": "Identificar las universidades y programas más adecuados.", "duration": "Semana 2"},
+          {"title": "Preparación de Solicitud", "description": "Preparar todos los documentos y ensayos con nuestra orientación.", "duration": "Semana 3-6"},
+          {"title": "Presentación", "description": "Presentar solicitudes antes de los plazos.", "duration": "Semana 7"},
+          {"title": "Aceptación e Inscripción", "description": "Recibir ofertas y completar procedimientos de inscripción.", "duration": "Semana 8-12"}
+        ],
+        "faqs": [
+          {"question": "¿Cuándo debo comenzar el proceso de solicitud?", "answer": "Recomendamos comenzar 6-9 meses antes de tu fecha de inicio prevista. Los plazos de solicitud varían según la universidad y el programa, generalmente entre enero y mayo para el ingreso de septiembre."},
+          {"question": "¿Pueden garantizar la admisión?", "answer": "Aunque no podemos garantizar la admisión, nuestra orientación experta mejora significativamente tus posibilidades. Tenemos un sólido historial con más del 90% de nuestros estudiantes recibiendo ofertas de sus universidades preferidas."},
+          {"question": "¿Ayudan con solicitudes de becas?", "answer": "Sí, proporcionamos información sobre becas disponibles y asistimos con solicitudes de becas para ayudar a hacer tu educación más asequible."}
+        ]
+      },
+      "sworn-translations": {
+        "title": "Traducciones Juradas",
+        "description": "Traducciones oficiales certificadas para todos tus documentos legales.",
+        "shortDescription": "Traducciones oficiales certificadas para todos tus documentos legales.",
+        "longDescription": "Obtén tus documentos traducidos oficialmente por traductores certificados reconocidos por las autoridades españolas. Nuestras traducciones juradas son legalmente válidas para solicitudes de visa, admisiones universitarias y todos los procedimientos oficiales.",
+        "bullets": ["Traductores jurados certificados", "Traducciones legalmente reconocidas", "Tiempos de entrega rápidos", "Todos los tipos de documentos aceptados", "Coordinación del servicio de apostilla", "Copias digitales y físicas proporcionadas"],
+        "requirements": ["Documentos originales o copias certificadas", "Escaneos/fotos claras si se presenta digitalmente", "Especificar idioma de destino (español, inglés, etc.)", "Uso previsto de la traducción"],
+        "timeline": [
+          {"title": "Presentación de Documento", "description": "Envíanos tus documentos para traducción.", "duration": "Día 1"},
+          {"title": "Cotización y Confirmación", "description": "Recibe una cotización y estimación de tiempo.", "duration": "Día 1"},
+          {"title": "Traducción", "description": "El traductor certificado trabaja en tus documentos.", "duration": "Día 2-5"},
+          {"title": "Control de Calidad", "description": "Revisión y certificación de la traducción.", "duration": "Día 6"},
+          {"title": "Entrega", "description": "Recibe tu traducción jurada con sello oficial.", "duration": "Día 7"}
+        ],
+        "faqs": [
+          {"question": "¿Qué documentos necesitan traducción jurada?", "answer": "Típicamente: certificados de nacimiento, transcripciones académicas, diplomas, certificados de antecedentes penales, certificados de matrimonio y cualquier documento legal requerido para solicitudes de visa o universidad."},
+          {"question": "¿La traducción jurada es lo mismo que la traducción notarizada?", "answer": "La traducción jurada es realizada por traductores oficialmente certificados y tiene peso legal en España. Es más específica y reconocida que las traducciones notarizadas generales."},
+          {"question": "¿Necesito apostilla también?", "answer": "A menudo sí, especialmente para documentos de países no pertenecientes a la UE. Podemos coordinar servicios de apostilla para ti."}
+        ]
+      },
+      "student-health-insurance": {
+        "title": "Seguro de Salud para Estudiantes",
+        "description": "Cobertura de seguro de salud integral para estudiantes internacionales.",
+        "shortDescription": "Cobertura de seguro de salud integral para estudiantes internacionales.",
+        "longDescription": "Mantente protegido con un seguro de salud integral que cumple con los requisitos de visa española. Ofrecemos planes asequibles con cobertura extensa, asegurando que tengas acceso a atención médica de calidad durante tus estudios.",
+        "bullets": ["Cumple con los requisitos de visa española", "Cobertura médica integral", "Cobertura de emergencias y hospitalización", "Cobertura de repatriación incluida", "Sin período de espera", "Proceso de reclamaciones fácil"],
+        "requirements": ["Copia de pasaporte válido", "Prueba de inscripción o carta de aceptación", "Duración de cobertura necesaria", "Información personal (nombre, fecha de nacimiento, dirección)"],
+        "timeline": [
+          {"title": "Selección de Plan", "description": "Elige el plan de seguro que se ajuste a tus necesidades.", "duration": "Día 1"},
+          {"title": "Solicitud", "description": "Completa el formulario de solicitud de seguro.", "duration": "Día 1"},
+          {"title": "Pago", "description": "Procesa el pago de tu plan elegido.", "duration": "Día 2"},
+          {"title": "Emisión de Póliza", "description": "Recibe tu certificado de seguro y detalles de la póliza.", "duration": "Día 3"}
+        ],
+        "faqs": [
+          {"question": "¿Es obligatorio el seguro de salud para la visa de estudiante?", "answer": "Sí, el seguro de salud integral es un requisito obligatorio para las solicitudes de visa de estudiante español. La cobertura debe cumplir con requisitos mínimos específicos."},
+          {"question": "¿Puedo usar la atención médica pública de España?", "answer": "Los estudiantes internacionales pueden acceder a la atención médica pública, pero el seguro privado sigue siendo requerido para la visa. Muchos estudiantes prefieren el seguro privado por tiempos de espera más cortos y servicios en inglés."},
+          {"question": "¿Qué cubre el seguro?", "answer": "Nuestros planes cubren consultas médicas, hospitalización, atención de emergencia, medicamentos recetados, pruebas diagnósticas y repatriación. Los detalles de cobertura específicos varían según el plan."}
+        ]
+      },
+      "residence-permit": {
+        "title": "Permiso de Residencia",
+        "description": "Asistencia para obtener y renovar tu permiso de residencia.",
+        "shortDescription": "Asistencia para obtener y renovar tu permiso de residencia.",
+        "longDescription": "Navega por la burocracia española con facilidad. Te guiamos a través de la obtención de tu TIE (Tarjeta de Identidad de Extranjero) y ayudamos con las renovaciones, asegurando que mantengas la residencia legal durante tus estudios.",
+        "bullets": ["Asistencia con solicitud de TIE", "Programación de citas en la oficina de inmigración", "Preparación y revisión de documentos", "Acompañamiento a citas (opcional)", "Recordatorios y apoyo de renovación", "Asistencia con número NIE"],
+        "requirements": ["Pasaporte válido con visa de estudiante", "Prueba de inscripción", "Prueba de dirección en España", "Certificado de seguro de salud", "Fotografías tamaño pasaporte", "Tasas de solicitud"],
+        "timeline": [
+          {"title": "Llegada a España", "description": "Debes solicitar TIE dentro de 30 días de llegada.", "duration": "Día 1-30"},
+          {"title": "Preparación de Documentos", "description": "Reunir todos los documentos requeridos con nuestra orientación.", "duration": "Semana 1"},
+          {"title": "Reserva de Cita", "description": "Programar cita en la oficina de inmigración.", "duration": "Semana 2"},
+          {"title": "Presentación de Solicitud", "description": "Presentar solicitud en la oficina de inmigración.", "duration": "Semana 3-4"},
+          {"title": "Recogida de Tarjeta", "description": "Recoger tu tarjeta TIE (generalmente 4-6 semanas después de la solicitud).", "duration": "Semana 8-10"}
+        ],
+        "faqs": [
+          {"question": "¿Cuál es la diferencia entre NIE y TIE?", "answer": "NIE es tu número de identificación de extranjero, mientras que TIE es la tarjeta de residencia física que contiene tu NIE. Necesitas ambos para residencia legal en España."},
+          {"question": "¿Cuánto tiempo es válido el permiso de residencia?", "answer": "Los permisos de residencia de estudiante iniciales son típicamente válidos por un año. Puedes renovarlos anualmente durante la duración de tus estudios."},
+          {"question": "¿Qué pasa si no solicito dentro de 30 días?", "answer": "La solicitud tardía puede resultar en multas y complicaciones. Ayudamos a asegurar que cumplas con todos los plazos para evitar penalizaciones."}
+        ]
+      },
+      "foundation-year": {
+        "title": "Año de Fundación",
+        "description": "Programa preparatorio para cerrar la brecha hacia la educación universitaria española.",
+        "shortDescription": "Programa preparatorio para cerrar la brecha hacia la educación universitaria española.",
+        "longDescription": "¿No estás del todo listo para el ingreso universitario directo? Nuestro programa de año de fundación prepara a estudiantes internacionales para el éxito en universidades españolas a través de preparación académica y lingüística intensiva.",
+        "bullets": ["Desarrollo de habilidades académicas", "Entrenamiento intensivo en idioma español", "Preparación específica por materia", "Apoyo en solicitud universitaria", "Orientación e integración cultural", "Progresión garantizada a universidades asociadas"],
+        "requirements": ["Diploma de secundaria o equivalente", "Dominio básico del inglés", "Motivación para estudiar en España", "No se requiere idioma español (te enseñaremos)"],
+        "timeline": [
+          {"title": "Solicitud", "description": "Solicita el programa de año de fundación.", "duration": "3-6 meses antes"},
+          {"title": "Aceptación", "description": "Recibe aceptación y prepárate para la llegada.", "duration": "2-3 meses antes"},
+          {"title": "Año de Fundación", "description": "Completa preparación académica y lingüística intensiva.", "duration": "9-12 meses"},
+          {"title": "Solicitud Universitaria", "description": "Solicita a universidades con nuestro apoyo.", "duration": "Durante año de fundación"},
+          {"title": "Ingreso Universitario", "description": "Progresa a tu programa de grado elegido.", "duration": "Septiembre siguiente"}
+        ],
+        "faqs": [
+          {"question": "¿Quién necesita un año de fundación?", "answer": "Estudiantes cuyas calificaciones no cumplen directamente con los requisitos de ingreso universitario español, o aquellos que necesitan mejorar sus habilidades en idioma español antes de comenzar un programa de grado."},
+          {"question": "¿El año de fundación está reconocido?", "answer": "Sí, nuestro año de fundación está reconocido por universidades asociadas y proporciona vías de progresión garantizadas a programas de grado."},
+          {"question": "¿Puedo omitir el año de fundación?", "answer": "Si cumples con los requisitos de ingreso directo (calificaciones académicas y competencia lingüística), puedes solicitar directamente a universidades sin un año de fundación."}
+        ]
+      },
+      "academic-equivalency": {
+        "title": "Equivalencia Académica",
+        "description": "Servicio de homologación para validar tus calificaciones extranjeras en España.",
+        "shortDescription": "Servicio de homologación para validar tus calificaciones extranjeras en España.",
+        "longDescription": "La homologación es el proceso por el cual el Ministerio de Educación español reconoce que tus calificaciones de secundaria o universidad son equivalentes a las calificaciones españolas. Esto a menudo es requerido para admisión universitaria y práctica profesional.",
+        "bullets": ["Apoyo completo en solicitud de homologación", "Preparación y traducción de documentos", "Presentación y seguimiento con el Ministerio", "Orientación de evaluación de credenciales", "Vías alternativas si es necesario", "Opciones de vía rápida cuando estén disponibles"],
+        "requirements": ["Certificados y transcripciones académicas originales", "Traducciones juradas de todos los documentos", "Apostilla en documentos originales", "Copia de pasaporte", "Formularios de solicitud completados", "Tasas de solicitud"],
+        "timeline": [
+          {"title": "Evaluación Inicial", "description": "Evaluar tus calificaciones y determinar requisitos.", "duration": "Semana 1"},
+          {"title": "Preparación de Documentos", "description": "Obtener traducciones, apostillas y preparar solicitud.", "duration": "Semana 2-4"},
+          {"title": "Presentación", "description": "Presentar solicitud al Ministerio de Educación.", "duration": "Semana 5"},
+          {"title": "Procesamiento", "description": "El Ministerio revisa tu solicitud (puede tomar varios meses).", "duration": "3-12 meses"},
+          {"title": "Resolución", "description": "Recibir certificado de homologación.", "duration": "Etapa final"}
+        ],
+        "faqs": [
+          {"question": "¿Necesito homologación para estudiar en España?", "answer": "Depende de tu programa y universidad. Muchas universidades aceptan calificaciones extranjeras directamente, pero algunos programas (especialmente profesiones reguladas) requieren homologación oficial."},
+          {"question": "¿Cuánto tiempo tarda la homologación?", "answer": "El proceso típicamente tarda 3-12 meses, dependiendo del tipo de calificación y los tiempos de procesamiento actuales en el Ministerio de Educación."},
+          {"question": "¿Qué pasa si mis calificaciones no son completamente equivalentes?", "answer": "El Ministerio puede otorgar equivalencia parcial o requerir cursos adicionales. Te ayudaremos a entender tus opciones y encontrar el mejor camino a seguir."}
+        ]
+      },
+      "accommodation": {
+        "title": "Alojamiento",
+        "description": "Opciones de vivienda seguras y cómodas cerca de tu universidad.",
+        "shortDescription": "Opciones de vivienda seguras y cómodas cerca de tu universidad.",
+        "longDescription": "Todas las opciones de alojamiento proporcionadas por Aval están minuciosamente verificadas para asegurar que cumplan con nuestros altos estándares de seguridad, comodidad y conveniencia. Te ayudamos a encontrar el lugar perfecto para llamar hogar durante tus estudios en España.",
+        "bullets": ["Residencias estudiantiles y apartamentos compartidos", "Estancia con familias españolas", "Estudios y apartamentos privados", "Cerca de campus universitarios", "Propietarios y propiedades verificados", "Términos de arrendamiento flexibles"],
+        "requirements": ["Prueba de aceptación o inscripción universitaria", "Ubicación y presupuesto preferidos", "Fecha de mudanza", "Duración de estancia", "Cualquier preferencia o requisito específico"],
+        "timeline": [
+          {"title": "Consulta", "description": "Discutir tus preferencias y presupuesto.", "duration": "1-2 meses antes"},
+          {"title": "Búsqueda de Propiedad", "description": "Identificamos opciones de alojamiento adecuadas.", "duration": "2-3 semanas"},
+          {"title": "Tours Virtuales", "description": "Ver propiedades vía videollamadas o fotos.", "duration": "1 semana"},
+          {"title": "Reserva", "description": "Asegurar tu alojamiento con depósito.", "duration": "2-4 semanas antes de llegada"},
+          {"title": "Mudanza", "description": "Asistimos con el check-in y asentamiento.", "duration": "Día de llegada"}
+        ],
+        "faqs": [
+          {"question": "¿Cuándo debo comenzar a buscar alojamiento?", "answer": "Recomendamos comenzar tu búsqueda 2-3 meses antes de tu llegada, especialmente para el ingreso de septiembre cuando la demanda es más alta."},
+          {"question": "¿Qué está incluido en el alquiler?", "answer": "Esto varía según la propiedad. Algunos incluyen servicios públicos (agua, electricidad, internet), mientras que otros cobran por separado. Aclararemos todos los costos por adelantado."},
+          {"question": "¿Puedo ver el alojamiento antes de reservar?", "answer": "Proporcionamos tours virtuales para estudiantes internacionales. Si ya estás en España, podemos organizar visitas en persona."}
+        ]
+      },
+      "other-services": {
+        "title": "Otros Servicios",
+        "description": "Servicios de apoyo adicionales para tu éxito académico y personal.",
+        "shortDescription": "Servicios de apoyo adicionales para tu éxito académico y personal.",
+        "longDescription": "Más allá de nuestros servicios principales, ofrecemos apoyo integral para diversas necesidades académicas y administrativas. Desde recogida en el aeropuerto hasta soluciones académicas expertas, estamos aquí para ayudarte a tener éxito en cada aspecto de tu viaje educativo español.",
+        "bullets": [
+          "Recogida en Aeropuerto (Valencia y Madrid) - Transporte seguro y confiable desde el aeropuerto a tu alojamiento",
+          "Redacción de CV/Currículum - Diseños profesionales compatibles con ATS que destacan tus logros",
+          "Asistencia de Investigación - Navegando proyectos académicos complejos con apoyo integral durante tu viaje de investigación, asegurando claridad, profundidad y rigor académico",
+          "Corrección y Edición - Asegura que tu trabajo esté libre de errores e impactante. Nuestros servicios de edición van más allá de la gramática para mejorar el flujo, claridad y tono",
+          "Cartas de Motivación y Declaraciones de Propósito - Tus calificaciones muestran lo que sabes, pero tu carta de motivación muestra quién eres. Te ayudamos a crear una narrativa convincente que demuestre al comité de admisiones por qué eres el candidato perfecto para su programa",
+          "Soluciones Académicas Expertas para todas tus necesidades"
+        ],
+        "requirements": ["Varía según el servicio específico necesitado", "Contáctanos para discutir tus requisitos"],
+        "timeline": [
+          {"title": "Consulta", "description": "Discutir tus necesidades específicas con nuestro equipo.", "duration": "Día 1"},
+          {"title": "Planificación de Servicio", "description": "Creamos un plan de apoyo personalizado.", "duration": "Día 2-3"},
+          {"title": "Implementación", "description": "Recibir los servicios de apoyo que necesitas.", "duration": "Varía"},
+          {"title": "Seguimiento", "description": "Apoyo continuo según sea necesario.", "duration": "Continuo"}
+        ],
+        "faqs": [
+          {"question": "¿Ofrecen servicios no listados en su sitio web?", "answer": "¡Sí! Proporcionamos muchos servicios adicionales basados en las necesidades de los estudiantes. Contáctanos para discutir cualquier requisito específico que tengas."},
+          {"question": "¿En qué ciudades proporcionan servicio de recogida en aeropuerto?", "answer": "Actualmente proporcionamos servicios de recogida en aeropuerto en Valencia y Madrid. Contáctanos si necesitas recogida desde otras ubicaciones."},
+          {"question": "¿Proporcionan apoyo continuo después de la llegada?", "answer": "Sí, permanecemos disponibles para asistirte durante tus estudios en España. Muchos de nuestros estudiantes se mantienen en contacto durante años."}
+        ]
+      }
+    }
+  },
+  "form": {
+    "fullName": "Nombre Completo",
+    "emailAddress": "Correo Electrónico",
+    "phoneWhatsapp": "Teléfono / WhatsApp",
+    "message": "Mensaje",
+    "namePlaceholder": "Juan Pérez",
+    "emailPlaceholder": "juan@example.com",
+    "phonePlaceholder": "+34 123 456 789",
+    "messagePlaceholder": "Cuéntanos sobre tus planes de estudio...",
+    "sending": "Enviando...",
+    "sendMessage": "Enviar Mensaje",
+    "successMessage": "¡Gracias! Nos pondremos en contacto contigo dentro de 24 horas.",
+    "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo o contáctanos directamente.",
+    "nameError": "El nombre debe tener al menos 2 caracteres",
+    "emailError": "Dirección de correo electrónico no válida",
+    "messageError": "El mensaje debe tener al menos 10 caracteres"
+  },
+  "universities": {
+    "title": "Universidades en España",
+    "subtitle": "Descubre oportunidades educativas de clase mundial en toda España",
+    "higherEducationTitle": "Sistema de Educación Superior de España",
+    "higherEducationDesc1": "El sector de educación superior de España comprende 89 universidades, con 50 instituciones públicas y 39 privadas. Las universidades españolas son reconocidas mundialmente por su excelencia académica y programas innovadores.",
+    "higherEducationDesc2": "Desde instituciones históricas como la Universidad de Salamanca (una de las más antiguas del mundo) hasta modernas escuelas de negocios, España ofrece diversas oportunidades educativas para estudiantes internacionales.",
+    "totalUniversities": "Total de Universidades",
+    "publicUniversities": "Universidades Públicas",
+    "popularDestinations": "Destinos de Estudio Populares",
+    "popularFields": "Campos de Estudio Populares",
+    "needHelpTitle": "¿Necesitas Ayuda para Elegir una Universidad?",
+    "needHelpDesc": "Nuestro equipo experto te ayudará a encontrar la universidad perfecta según tus objetivos académicos, presupuesto y preferencias. Manejamos todo el proceso de solicitud de principio a fin.",
+    "learnAdmissions": "Conoce Nuestro Servicio de Admisiones",
+    "cities": {
+      "madrid": {
+        "name": "Madrid",
+        "description": "La capital de España ofrece universidades prestigiosas y vida estudiantil vibrante",
+        "universities": "15+ universidades"
+      },
+      "barcelona": {
+        "name": "Barcelona",
+        "description": "Programas innovadores en una ciudad mediterránea cosmopolita",
+        "universities": "12+ universidades"
+      },
+      "valencia": {
+        "name": "Valencia",
+        "description": "Educación asequible con excelente calidad de vida",
+        "universities": "8+ universidades"
+      },
+      "seville": {
+        "name": "Sevilla",
+        "description": "Rico patrimonio cultural e instituciones académicas históricas",
+        "universities": "6+ universidades"
+      },
+      "salamanca": {
+        "name": "Salamanca",
+        "description": "Hogar de una de las universidades más antiguas del mundo",
+        "universities": "4+ universidades"
+      },
+      "granada": {
+        "name": "Granada",
+        "description": "Entorno hermoso con fuerte comunidad estudiantil internacional",
+        "universities": "5+ universidades"
+      }
+    },
+    "fields": {
+      "business": {
+        "name": "Negocios y Gestión",
+        "description": "Escuelas de negocios y programas MBA de primer nivel"
+      },
+      "engineering": {
+        "name": "Ingeniería",
+        "description": "Tecnología de vanguardia e instalaciones de investigación"
+      },
+      "arts": {
+        "name": "Artes y Humanidades",
+        "description": "Programas culturales ricos y estudios de idiomas"
+      },
+      "medicine": {
+        "name": "Medicina y Salud",
+        "description": "Educación médica y formación de clase mundial"
+      }
+    }
+  },
+  "cta": {
+    "startApplication": "Comienza tu solicitud hoy",
+    "navigateProcess": "Permítenos ayudarte a navegar el proceso de solicitud universitaria",
+    "applyNow": "Solicitar Ahora",
+    "contactUs": "Contáctanos",
+    "readyToStart": "¿Listo para comenzar tu viaje educativo español?",
+    "joinSuccessful": "Únete a cientos de estudiantes exitosos que confiaron en nosotros con sus sueños",
+    "viewServices": "Ver Nuestros Servicios",
+    "bookConsultation": "Reservar una Consulta Gratuita"
+  },
+  "about": {
+    "title": "Acerca de Servicios Estudiantiles Aval",
+    "intro1": "Durante 8 años, hemos estado ayudando a estudiantes de todo el mundo a lograr sus sueños de estudiar en España. Nuestro experimentado equipo de profesionales está dedicado a proporcionar apoyo integral en cada paso de tu viaje.",
+    "intro2": "Entendemos que estudiar en el extranjero es una decisión que cambia la vida, y estamos aquí para hacer el proceso lo más fluido y libre de estrés posible.",
+    "startJourney": "Comienza Tu Viaje",
+    "ourVision": "Nuestra Visión",
+    "visionTitle": "Buscamos convertirnos en líderes en la provisión de servicios estudiantiles distinguidos e innovadores",
+    "visionDesc": "Nuestro objetivo es mejorar el éxito estudiantil y lograr sus ambiciones académicas y profesionales. Imaginamos un mundo donde cada estudiante pueda acceder a las mejores oportunidades educativas independientemente de su ubicación geográfica o estado financiero, y nos esforzamos por hacer esta visión realidad a través de nuestros servicios dedicados.",
+    "ourMission": "Nuestra Misión",
+    "missionTitle": "Proporcionar programas educativos innovadores y efectivos",
+    "missionDesc": "Proporcionar programas educativos innovadores y efectivos para mejorar el logro estudiantil y desarrollar sus habilidades académicas. Estamos comprometidos a proporcionar el mejor servicio posible mientras mantenemos completamente la privacidad. Nuestra misión es empoderar a los estudiantes proporcionando apoyo y orientación integral, permitiéndoles navegar las complejidades de la educación internacional y lograr sus aspiraciones con confianza.",
+    "whyChoose": "¿Por Qué Elegir Aval?",
+    "whyChooseSubtitle": "Lo que nos distingue de otros proveedores de servicios estudiantiles",
+    "experience": "8 Años de Experiencia",
+    "experienceDesc": "Casi una década ayudando exitosamente a estudiantes a lograr sus sueños de estudiar en el extranjero en España.",
+    "personalizedSupport": "Apoyo Personalizado",
+    "personalizedDesc": "Cada estudiante recibe atención individual y orientación personalizada basada en sus necesidades y objetivos únicos.",
+    "endToEnd": "Servicio Integral",
+    "endToEndDesc": "Desde la consulta inicial hasta establecerse en España, te apoyamos en cada etapa de tu viaje.",
+    "highSuccess": "Alta Tasa de Éxito",
+    "highSuccessDesc": "Más del 95% de nuestros estudiantes obtienen exitosamente sus visas y admisiones universitarias.",
+    "expertTeam": "Equipo Experto",
+    "expertTeamDesc": "Nuestro equipo consiste en profesionales experimentados que entienden tanto la educación española como las necesidades de estudiantes internacionales.",
+    "transparentPricing": "Precios Transparentes",
+    "transparentPricingDesc": "Sin tarifas ocultas ni sorpresas. Proporcionamos precios claros y paquetes de servicios integrales."
+  },
+  "apply": {
+    "title": "Solicitar Ahora",
+    "subtitle": "Completa este formulario para comenzar tu viaje para estudiar en España",
+    "steps": {
+      "personal": "Información Personal",
+      "study": "Planes de Estudio",
+      "services": "Servicios Necesarios",
+      "review": "Revisar y Enviar"
+    },
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "nationality": "Nacionalidad",
+    "desiredProgram": "Programa / Campo de Estudio Deseado",
+    "studyLevel": "Nivel de Estudio",
+    "selectLevel": "Seleccionar nivel",
+    "bachelor": "Licenciatura",
+    "master": "Maestría",
+    "phd": "Doctorado",
+    "languageCourse": "Curso de Idiomas",
+    "other": "Otro",
+    "intakeYear": "Año de Ingreso",
+    "semester": "Semestre",
+    "selectSemester": "Seleccionar semestre",
+    "fall": "Otoño (Septiembre)",
+    "spring": "Primavera (Enero)",
+    "selectServices": "Selecciona los Servicios que Necesitas",
+    "reviewInfo": "Revisa Tu Información",
+    "name": "Nombre",
+    "program": "Programa",
+    "intake": "Ingreso",
+    "servicesSelected": "seleccionados",
+    "additionalInfo": "Información Adicional (Opcional)",
+    "additionalPlaceholder": "Cualquier información adicional que desees compartir...",
+    "privacyConsent": "Al enviar este formulario, aceptas nuestra política de privacidad y consientes ser contactado por Servicios Estudiantiles Aval con respecto a tu solicitud.",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submitting": "Enviando...",
+    "submitApplication": "Enviar Solicitud",
+    "successTitle": "¡Solicitud Enviada!",
+    "successMessage": "Gracias por tu solicitud. Revisaremos tu información y nos pondremos en contacto contigo dentro de 24-48 horas por correo electrónico.",
+    "checkEmail": "Revisa tu correo electrónico para un mensaje de confirmación con los próximos pasos.",
+    "returnHome": "Volver al Inicio",
+    "firstNameError": "El nombre debe tener al menos 2 caracteres",
+    "lastNameError": "El apellido debe tener al menos 2 caracteres",
+    "phoneError": "El número de teléfono es requerido",
+    "nationalityError": "La nacionalidad es requerida",
+    "programError": "El programa es requerido",
+    "yearError": "El año es requerido",
+    "servicesError": "Selecciona al menos un servicio"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para responder tus preguntas y ayudarte a comenzar tu viaje",
+    "email": "Envíanos un Correo",
+    "emailDesc": "Envíanos un correo en cualquier momento",
+    "call": "Llámanos",
+    "callDesc": "Lun-Vie de 9am a 6pm",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Chatea con nosotros al instante",
+    "startChat": "Iniciar Chat",
+    "sendMessage": "Envíanos un Mensaje",
+    "messageDesc": "Completa el formulario y te responderemos en 24 horas en días hábiles.",
+    "visitOffice": "Visita Nuestra Oficina",
+    "location": "Ubicación",
+    "officeHours": "Horario de Oficina",
+    "closed": "Sábado - Domingo: Cerrado",
+    "inPerson": "¿Prefieres hablar en persona?",
+    "inPersonDesc": "Programa una consulta gratuita en nuestra oficina. Discutiremos tus planes de estudio y responderemos todas tus preguntas.",
+    "bookConsultation": "Reservar una Consulta"
+  },
+  "footer": {
+    "description": "Ayudando a estudiantes a lograr sus sueños de estudiar en España",
+    "services": "Servicios",
+    "company": "Empresa",
+    "legal": "Legal",
+    "contactUs": "Contáctanos",
+    "rights": "Todos los derechos reservados."
+  },
+  "serviceCategories": {
+    "beforeArrival": "Antes de Llegar",
+    "beforeArrivalDesc": "Servicios esenciales para prepararte para tu viaje a España",
+    "onArrival": "Al Llegar",
+    "onArrivalDesc": "Servicios de apoyo para tus primeros días en España",
+    "settlingIn": "Estableciéndose",
+    "settlingInDesc": "Apoyo continuo para ayudarte a prosperar en tu nuevo hogar",
+    "viewAll": "Ver Todos los Servicios"
+  },
+  "servicesPage": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Apoyo integral para cada etapa de tu viaje para estudiar en España",
+    "ctaTitle": "¿Listo para comenzar?",
+    "ctaDescription": "Reserva una consulta gratuita para discutir tus planes de estudio",
+    "ctaPrimary": "Reservar una Consulta Gratuita",
+    "ctaSecondary": "Contáctanos"
+  },
+  "studyInSpain": {
+    "title": "Estudiar en España",
+    "subtitle": "Descubre por qué España es el destino perfecto para tu educación",
+    "whySpain": {
+      "title": "¿Por qué estudiar en España?",
+      "paragraph1": "España es un país interesante y rico, con muchas oportunidades para aprender, avanzar y socializar. Es un país que ofrece lo mejor de ambos mundos: un estilo de vida relajado con un fuerte enfoque en la educación. Las universidades españolas tienen una larga tradición de excelencia académica y son reconocidas mundialmente por sus programas de alta calidad.",
+      "paragraph2": "La calidad de la educación en España es continuamente monitoreada y evaluada por el gobierno, asegurando que los estudiantes reciban una educación de primer nivel."
+    },
+    "universities": {
+      "title": "¿Cuántas comunidades hay en España?",
+      "description": "Su sector de educación superior comprende 89 universidades españolas, de las cuales 50 son públicas y 39 son universidades privadas, que incluyen algunas de las mejores escuelas de negocios. España también alberga la Universidad de Salamanca, que es una de las universidades más antiguas del mundo.",
+      "cta": "Únete Ahora"
+    }
+  },
+  "spainByNumbers": {
+    "title": "España en Números",
+    "subtitle": "Datos fascinantes sobre tu futuro destino de estudios"
+  },
+  "visionMission": {
+    "vision": {
+      "title": "Buscamos convertirnos en líderes en la provisión de servicios estudiantiles distinguidos e innovadores",
+      "description": "Nuestro objetivo es mejorar el éxito de los estudiantes y lograr sus ambiciones académicas y profesionales. Imaginamos un mundo donde cada estudiante pueda acceder a las mejores oportunidades educativas independientemente de su ubicación geográfica o situación financiera, y nos esforzamos por hacer realidad esta visión a través de nuestros servicios dedicados."
+    },
+    "mission": {
+      "title": "Proporcionar programas educativos innovadores y efectivos",
+      "description": "Proporcionar programas educativos innovadores y efectivos para mejorar el logro estudiantil y desarrollar sus habilidades académicas. Estamos comprometidos a proporcionar el mejor servicio posible mientras mantenemos completamente la privacidad. Nuestra misión es empoderar a los estudiantes proporcionando apoyo y orientación integral, permitiéndoles navegar las complejidades de la educación internacional y lograr sus aspiraciones con confianza."
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Encuentra respuestas a preguntas comunes sobre estudiar en España",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo tarda el proceso de solicitud de visa?",
+        "answer": "El proceso de visa de estudiante generalmente tarda de 4 a 8 semanas desde el momento en que envías tu solicitud completa. Recomendamos comenzar el proceso al menos 3 meses antes de tu fecha de inicio prevista para permitir tiempo para la preparación de documentos y cualquier retraso imprevisto."
+      },
+      {
+        "question": "¿Qué documentos necesito para estudiar en España?",
+        "answer": "Los documentos esenciales incluyen: pasaporte válido, carta de aceptación universitaria, prueba de medios financieros, seguro de salud, certificado de antecedentes penales y transcripciones académicas. Proporcionamos una lista completa y te guiamos para obtener cada documento."
+      },
+      {
+        "question": "¿Necesito hablar español para estudiar en España?",
+        "answer": "Depende de tu programa. Muchas universidades ofrecen programas en inglés, especialmente a nivel de maestría. Sin embargo, aprender español es muy recomendable para la vida diaria y la integración. Ofrecemos cursos de idioma español para ayudarte a prepararte."
+      },
+      {
+        "question": "¿Cuánto cuesta estudiar en España?",
+        "answer": "Los costos varían según la universidad y el programa. Las universidades públicas generalmente cobran €1,000-€3,500 por año para programas de licenciatura, mientras que las universidades privadas oscilan entre €6,000-€20,000. Los gastos de vida promedian €800-€1,200 por mes dependiendo de la ciudad."
+      },
+      {
+        "question": "¿Puedo trabajar mientras estudio en España?",
+        "answer": "Sí, los estudiantes internacionales pueden trabajar hasta 20 horas por semana durante el período de clases y a tiempo completo durante las vacaciones. Necesitarás obtener un permiso de trabajo, con el cual podemos ayudarte una vez que llegues a España."
+      },
+      {
+        "question": "¿Cómo contacto con los Servicios para Estudiantes Aval?",
+        "answer": "Puedes contactarnos a través de nuestro formulario de contacto, WhatsApp, correo electrónico o teléfono. Generalmente respondemos dentro de 24 horas en días hábiles. Para asuntos urgentes, WhatsApp es la forma más rápida de comunicarte con nuestro equipo."
+      }
+    ]
+  },
+  "trustUs": {
+    "title": "Confían en Nosotros"
+  }
+}

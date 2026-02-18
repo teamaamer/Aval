@@ -1,8 +1,12 @@
+'use client';
+
 import Link from "next/link";
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { useTranslations } from 'next-intl';
 import { siteConfig, footerLinks } from "@/content/site";
 
 export function Footer() {
+  const t = useTranslations('footer');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -12,7 +16,7 @@ export function Footer() {
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">Aval</h3>
             <p className="text-sm mb-4">
-              Dedicated professionals committed to helping students achieve their dreams of studying in Spain.
+              {t('description')}
             </p>
             <div className="flex space-x-3">
               <a
@@ -55,7 +59,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Our Services</h4>
+            <h4 className="text-white font-semibold mb-4">{t('services')}</h4>
             <ul className="space-y-2 text-sm">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
@@ -68,7 +72,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Company</h4>
+            <h4 className="text-white font-semibold mb-4">{t('company')}</h4>
             <ul className="space-y-2 text-sm">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -78,7 +82,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <h4 className="text-white font-semibold mt-6 mb-4">Legal</h4>
+            <h4 className="text-white font-semibold mt-6 mb-4">{t('legal')}</h4>
             <ul className="space-y-2 text-sm">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
@@ -91,7 +95,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-white font-semibold mb-4">{t('contactUs')}</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
@@ -114,7 +118,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
+          <p>&copy; {currentYear} {siteConfig.name}. {t('rights')}</p>
         </div>
       </div>
     </footer>

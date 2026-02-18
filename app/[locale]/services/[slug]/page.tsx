@@ -1,7 +1,7 @@
-import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from 'next-intl/server';
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,30 +11,15 @@ import { ContactForm } from "@/components/contact-form";
 import { getIconComponent } from "@/lib/icon-mapper";
 import { services, getServiceBySlug } from "@/content/services";
 
-export async function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-  }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const service = getServiceBySlug(slug);
-
-  if (!service) {
-    return {
-      title: "Service Not Found",
-    };
-  }
-
-  return {
-    title: service.title,
-    description: service.longDescription,
-  };
+export function generateStaticParams() {
+  const locales = ['en', 'ar', 'es'];
+  
+  return locales.flatMap((locale) =>
+    services.map((service) => ({
+      locale,
+      slug: service.slug,
+    }))
+  );
 }
 
 export default async function ServiceDetailPage({
@@ -42,6 +27,7 @@ export default async function ServiceDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  const t = await getTranslations('services');
   const { slug } = await params;
   const service = getServiceBySlug(slug);
 
@@ -58,7 +44,7 @@ export default async function ServiceDetailPage({
           <Button asChild variant="ghost" className="mb-6">
             <Link href="/services">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Services
+              {t('backToServices')}
             </Link>
           </Button>
 
@@ -70,12 +56,12 @@ export default async function ServiceDetailPage({
                 </div>
                 <div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    {service.title}
+                    {t(`items.${service.slug}.title`)}
                   </h1>
                 </div>
               </div>
               <p className="text-xl text-muted-foreground">
-                {service.longDescription}
+                {t(`items.${service.slug}.longDescription`)}
               </p>
             </div>
             
@@ -99,9 +85,9 @@ export default async function ServiceDetailPage({
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">What We Help With</h2>
+                <h2 className="text-3xl font-bold mb-6">{t('whatWeHelp')}</h2>
                 <div className="grid md:grid-cols-2 gap-4">
-                  {service.bullets.map((bullet, index) => (
+                  {t.raw(`items.${service.slug}.bullets`).map((bullet: string, index: number) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <p className="text-muted-foreground">{bullet}</p>
@@ -111,11 +97,11 @@ export default async function ServiceDetailPage({
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-6">Requirements</h2>
+                <h2 className="text-3xl font-bold mb-6">{t('requirements')}</h2>
                 <Card>
                   <CardContent className="pt-6">
                     <ul className="space-y-3">
-                      {service.requirements.map((requirement, index) => (
+                      {t.raw(`items.${service.slug}.requirements`).map((requirement: string, index: number) => (
                         <li key={index} className="flex items-start gap-3">
                           <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-xs font-semibold text-primary">
@@ -131,16 +117,16 @@ export default async function ServiceDetailPage({
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-6">Process Timeline</h2>
-                <Timeline steps={service.timelineSteps} />
+                <h2 className="text-3xl font-bold mb-6">{t('timeline')}</h2>
+                <Timeline steps={t.raw(`items.${service.slug}.timeline`)} />
               </div>
 
               {service.faqs.length > 0 && (
                 <div>
                   <h2 className="text-3xl font-bold mb-6">
-                    Frequently Asked Questions
+                    {t('faqs')}
                   </h2>
-                  <FAQAccordion faqs={service.faqs} />
+                  <FAQAccordion faqs={t.raw(`items.${service.slug}.faqs`)} />
                 </div>
               )}
             </div>
@@ -148,12 +134,11 @@ export default async function ServiceDetailPage({
             <div className="lg:col-span-1">
               <Card className="sticky top-24">
                 <CardHeader>
-                  <CardTitle>Get Started Today</CardTitle>
+                  <CardTitle>{t('getStartedToday')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-6">
-                    Fill out the form below and we&apos;ll get back to you within 24
-                    hours to discuss your {service.title.toLowerCase()} needs.
+                    {t('getStartedDescription')} {t(`items.${service.slug}.title`).toLowerCase()} {t('needs')}.
                   </p>
                   <ContactForm />
                 </CardContent>
@@ -166,18 +151,17 @@ export default async function ServiceDetailPage({
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Need Multiple Services?
+            {t('needMultipleServices')}
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We offer comprehensive packages that combine multiple services at a
-            discounted rate. Contact us to learn more.
+            {t('multipleServicesDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="/apply">Book a Free Consultation</Link>
+              <Link href="/apply">{t('bookConsultation')}</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/services">View All Services</Link>
+              <Link href="/services">{t('viewAllServices')}</Link>
             </Button>
           </div>
         </div>

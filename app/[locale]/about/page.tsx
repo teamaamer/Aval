@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { getTranslations } from 'next-intl/server';
 import { Target, Eye, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
   description: "Learn about Aval Student Services - 8 years of helping students achieve their dreams of studying in Spain.",
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const t = await getTranslations('about');
+  const tCta = await getTranslations('cta');
   return (
     <>
       <section className="pt-32 pb-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -20,21 +23,16 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                About Aval Student Services
+                {t('title')}
               </h1>
               <p className="text-lg text-muted-foreground mb-6">
-                For 8 years, we&apos;ve been helping students from around the world
-                achieve their dreams of studying in Spain. Our experienced team of
-                professionals is dedicated to providing comprehensive support at
-                every step of your journey.
+                {t('intro1')}
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                We understand that studying abroad is a life-changing decision, and
-                we&apos;re here to make the process as smooth and stress-free as
-                possible.
+                {t('intro2')}
               </p>
               <Button asChild size="lg">
-                <Link href="/apply">Start Your Journey</Link>
+                <Link href="/apply">{t('startJourney')}</Link>
               </Button>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -58,18 +56,12 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
                   <Eye className="h-6 w-6 text-primary" />
                 </div>
-                <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+                <h2 className="text-2xl font-bold mb-4">{t('ourVision')}</h2>
                 <p className="text-lg font-semibold mb-4">
-                  We seek to become leaders in providing distinguished and
-                  innovative student services
+                  {t('visionTitle')}
                 </p>
                 <p className="text-muted-foreground">
-                  We are aiming to enhance student success and achieve their
-                  academic and professional ambitions. We envision a world where
-                  every student can access the best education opportunities
-                  regardless of their geographical location or financial status, and
-                  we strive to make this vision a reality through our dedicated
-                  services.
+                  {t('visionDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -79,18 +71,12 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6">
                   <Target className="h-6 w-6 text-secondary" />
                 </div>
-                <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+                <h2 className="text-2xl font-bold mb-4">{t('ourMission')}</h2>
                 <p className="text-lg font-semibold mb-4">
-                  Providing innovative and effective educational programs
+                  {t('missionTitle')}
                 </p>
                 <p className="text-muted-foreground">
-                  Providing innovative and effective educational programs to enhance
-                  student achievement and develop their academic skills. We are
-                  committed to providing the best possible service while fully
-                  maintaining privacy. Our mission is to empower students by
-                  providing comprehensive support and guidance, enabling them to
-                  navigate the complexities of international education and achieve
-                  their aspirations with confidence.
+                  {t('missionDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -101,8 +87,8 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <SectionHeading
-            title="Why Choose Aval?"
-            subtitle="What sets us apart from other student service providers"
+            title={t('whyChoose')}
+            subtitle={t('whyChooseSubtitle')}
             centered
             className="mb-12"
           />
@@ -113,10 +99,9 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Award className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">8 Years of Experience</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('experience')}</h3>
                 <p className="text-muted-foreground">
-                  Nearly a decade of successfully helping students achieve their
-                  study abroad dreams in Spain.
+                  {t('experienceDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -127,11 +112,10 @@ export default function AboutPage() {
                   <Users className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
-                  Personalized Support
+                  {t('personalizedSupport')}
                 </h3>
                 <p className="text-muted-foreground">
-                  Every student receives individual attention and customized
-                  guidance based on their unique needs and goals.
+                  {t('personalizedDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -141,10 +125,9 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">End-to-End Service</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('endToEnd')}</h3>
                 <p className="text-muted-foreground">
-                  From initial consultation to settling in Spain, we support you at
-                  every stage of your journey.
+                  {t('endToEndDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -154,10 +137,9 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Award className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">High Success Rate</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('highSuccess')}</h3>
                 <p className="text-muted-foreground">
-                  Over 95% of our students successfully obtain their visas and
-                  university admissions.
+                  {t('highSuccessDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -167,10 +149,9 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Expert Team</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('expertTeam')}</h3>
                 <p className="text-muted-foreground">
-                  Our team consists of experienced professionals who understand both
-                  Spanish education and international student needs.
+                  {t('expertTeamDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -180,10 +161,9 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Transparent Pricing</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('transparentPricing')}</h3>
                 <p className="text-muted-foreground">
-                  No hidden fees or surprises. We provide clear pricing and
-                  comprehensive service packages.
+                  {t('transparentPricingDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -192,11 +172,11 @@ export default function AboutPage() {
       </section>
 
       <CTASection
-        title="Ready to start your Spanish education journey?"
-        description="Join hundreds of successful students who trusted us with their dreams"
-        primaryButtonText="Book a Free Consultation"
+        title={tCta('readyToStart')}
+        description={tCta('joinSuccessful')}
+        primaryButtonText={tCta('bookConsultation')}
         primaryButtonHref="/apply"
-        secondaryButtonText="View Our Services"
+        secondaryButtonText={tCta('viewServices')}
         secondaryButtonHref="/services"
       />
     </>

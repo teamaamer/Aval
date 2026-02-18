@@ -1,0 +1,980 @@
+{
+  "nav": {
+    "home": "Home",
+    "applyNow": "Apply",
+    "services": "Services",
+    "universities": "Universities",
+    "about": "About",
+    "bookConsultation": "Book Consultation"
+  },
+  "hero": {
+    "badge": "Your gateway to universities in Spain",
+    "title": "Your Journey to Study in Spain Starts Here",
+    "subtitle": "We guide international students through every step of studying in Spain - from university admissions to visa processing and beyond.",
+    "cta": "Start Your Application",
+    "learnMore": "Learn More"
+  },
+  "stats": {
+    "items": [
+      {
+        "title": "Population",
+        "description": "Second largest country in Western Europe and fifth most populated: 504,645 km² and 49,153,849 inhabitants",
+        "icon": "Users"
+      },
+      {
+        "title": "Tourism",
+        "description": "Spain welcomed 94 million international tourists in 2024, a 10% increase compared to 2023, marking the country's best year for tourism",
+        "icon": "Plane"
+      },
+      {
+        "title": "Heritage",
+        "description": "No. 3 in the world and no. 2 in Europe with regards to the number of UNESCO World Heritage Sites: 45 declared",
+        "icon": "Landmark"
+      },
+      {
+        "title": "Health",
+        "description": "Spain has a high-quality healthcare system and strong public health standards, supporting a safe student experience.",
+        "icon": "Heart"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Simple steps to start your journey",
+    "step1": {
+      "title": "Consultation",
+      "description": "Book a free consultation to discuss your study goals and requirements."
+    },
+    "step2": {
+      "title": "Document Preparation",
+      "description": "We guide you through gathering and preparing all necessary documents."
+    },
+    "step3": {
+      "title": "Application & Submission",
+      "description": "We handle your university applications and visa submissions professionally."
+    },
+    "step4": {
+      "title": "Arrival Support",
+      "description": "From airport pickup to accommodation, we ensure a smooth transition to Spain."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Students Say",
+    "subtitle": "Real experiences from students we've helped",
+    "items": [
+      {
+        "name": "Shatha Arafat",
+        "text": "I highly recommend Aval Students Service to anyone planning to study in Spain. They supported me through every step of the registration process—from certifying my documents all the way to securing my university acceptance. They were always available to answer my questions and any concerns i have."
+      },
+      {
+        "name": "Hamad Al Jazi",
+        "text": "I received excellent support from AVAL Student Services. The team was responsive, professional, and went above and beyond to help me resolve my issue quickly. I truly appreciate their dedication and highly recommend their services to all students."
+      },
+      {
+        "name": "Qais Hammouri",
+        "text": "An absolutely wonderful experience dealing with AVAL. Everything went smoothly and easily, as they helped me secure a PhD admission to one of the prestigious universities in Spain. I thank the AVAL team for their cooperation, kindness, professionalism, and punctuality."
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive support for your study abroad journey",
+    "learnMore": "Learn more",
+    "backToServices": "Back to Services",
+    "whatWeHelp": "What We Help With",
+    "requirements": "Requirements",
+    "timeline": "Process Timeline",
+    "faqs": "Frequently Asked Questions",
+    "getStarted": "Get Started",
+    "bookConsultation": "Book a Free Consultation",
+    "getStartedToday": "Get Started Today",
+    "getStartedDescription": "Fill out the form below and we'll get back to you within 24 hours to discuss your",
+    "needs": "needs",
+    "needMultipleServices": "Need Multiple Services?",
+    "multipleServicesDescription": "We offer comprehensive packages that combine multiple services at a discounted rate. Contact us to learn more.",
+    "viewAllServices": "View All Services",
+    "items": {
+      "student-visa": {
+        "title": "Student Visa",
+        "description": "Complete visa application support from documentation to approval.",
+        "shortDescription": "Complete visa application support from documentation to approval.",
+        "longDescription": "Navigating the Spanish student visa process can be complex. We provide end-to-end support, ensuring all your documents are correctly prepared and submitted. Our experienced team has helped hundreds of students successfully obtain their visas.",
+        "bullets": [
+          "Complete document checklist and preparation guidance",
+          "Application form assistance and review",
+          "Appointment scheduling at Spanish consulate",
+          "Interview preparation and tips",
+          "Application tracking and follow-up",
+          "Express processing options when available"
+        ],
+        "requirements": [
+          "Valid passport (minimum 6 months validity)",
+          "University acceptance letter",
+          "Proof of financial means (bank statements)",
+          "Health insurance certificate",
+          "Background check certificate",
+          "Passport-sized photographs",
+          "Completed visa application form"
+        ],
+        "timeline": [
+          {
+            "title": "Initial Consultation",
+            "description": "We assess your situation and provide a personalized visa roadmap.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Document Preparation",
+            "description": "Gather and prepare all required documents with our guidance.",
+            "duration": "Week 1-2"
+          },
+          {
+            "title": "Application Submission",
+            "description": "Submit your application at the Spanish consulate with our support.",
+            "duration": "Week 3"
+          },
+          {
+            "title": "Processing & Follow-up",
+            "description": "We track your application and handle any additional requests.",
+            "duration": "Week 4-8"
+          },
+          {
+            "title": "Visa Collection",
+            "description": "Receive your approved visa and prepare for departure.",
+            "duration": "Week 8-10"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "How long is the student visa valid?",
+            "answer": "Student visas are typically issued for the duration of your program, up to one year initially. You can renew your residence permit in Spain for subsequent years."
+          },
+          {
+            "question": "Can my family accompany me on a student visa?",
+            "answer": "Yes, family reunification is possible after you've been in Spain for one year. We can guide you through this process when the time comes."
+          },
+          {
+            "question": "What if my visa application is rejected?",
+            "answer": "Rejections are rare when applications are properly prepared. If it happens, we'll help you understand the reasons and reapply with corrections. Our success rate is over 95%."
+          }
+        ]
+      },
+      "spanish-language-courses": {
+        "title": "Spanish Language Courses",
+        "description": "Learn Spanish before and during your studies in Spain.",
+        "shortDescription": "Learn Spanish before and during your studies in Spain.",
+        "longDescription": "Master Spanish with our comprehensive language courses designed specifically for international students. Whether you're a complete beginner or looking to improve your fluency, we offer flexible programs to fit your needs.",
+        "bullets": [
+          "Online and in-person course options",
+          "Beginner to advanced levels (A1-C2)",
+          "Small class sizes for personalized attention",
+          "Certified instructors with teaching experience",
+          "Cultural immersion activities included",
+          "Official DELE exam preparation"
+        ],
+        "requirements": [
+          "No prior Spanish knowledge required for beginner courses",
+          "Placement test for intermediate/advanced levels",
+          "Reliable internet connection for online courses",
+          "Commitment to attend classes regularly"
+        ],
+        "timeline": [
+          {
+            "title": "Level Assessment",
+            "description": "Take a placement test to determine your current level.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Course Selection",
+            "description": "Choose the program that fits your schedule and goals.",
+            "duration": "Day 2-3"
+          },
+          {
+            "title": "Enrollment",
+            "description": "Complete registration and receive course materials.",
+            "duration": "Day 4-5"
+          },
+          {
+            "title": "Learning Journey",
+            "description": "Attend classes and practice with native speakers.",
+            "duration": "4-12 weeks"
+          },
+          {
+            "title": "Certification",
+            "description": "Receive your course completion certificate.",
+            "duration": "Final week"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do I need to know Spanish to study in Spain?",
+            "answer": "Many programs are offered in English, but knowing Spanish greatly enhances your experience and opens more opportunities. We recommend at least basic Spanish proficiency."
+          },
+          {
+            "question": "How long does it take to become conversational?",
+            "answer": "With consistent study, most students reach conversational level (B1) in 6-9 months. Intensive courses can accelerate this timeline."
+          },
+          {
+            "question": "Are the courses recognized officially?",
+            "answer": "Yes, our courses are aligned with the Common European Framework (CEFR) and we offer DELE exam preparation for official certification."
+          }
+        ]
+      },
+      "university-admissions": {
+        "title": "University Admissions",
+        "description": "Expert guidance through the university application process.",
+        "shortDescription": "Expert guidance through the university application process.",
+        "longDescription": "Gain admission to top Spanish universities with our expert guidance. We help you identify the best programs for your goals, prepare compelling applications, and navigate the entire admissions process from start to finish.",
+        "bullets": [
+          "University and program selection consultation",
+          "Application strategy and timeline planning",
+          "Personal statement and essay review",
+          "Academic credential evaluation and translation",
+          "Application submission and tracking",
+          "Scholarship and funding guidance"
+        ],
+        "requirements": [
+          "High school diploma or bachelor's degree (depending on program level)",
+          "Academic transcripts and certificates",
+          "Language proficiency proof (Spanish or English)",
+          "Letters of recommendation",
+          "Personal statement or motivation letter",
+          "CV/Resume"
+        ],
+        "timeline": [
+          {
+            "title": "Profile Assessment",
+            "description": "Evaluate your academic background and career goals.",
+            "duration": "Week 1"
+          },
+          {
+            "title": "University Selection",
+            "description": "Identify the best-fit universities and programs.",
+            "duration": "Week 2"
+          },
+          {
+            "title": "Application Preparation",
+            "description": "Prepare all documents and essays with our guidance.",
+            "duration": "Week 3-6"
+          },
+          {
+            "title": "Submission",
+            "description": "Submit applications before deadlines.",
+            "duration": "Week 7"
+          },
+          {
+            "title": "Acceptance & Enrollment",
+            "description": "Receive offers and complete enrollment procedures.",
+            "duration": "Week 8-12"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "When should I start the application process?",
+            "answer": "We recommend starting 6-9 months before your intended start date. Application deadlines vary by university and program, typically falling between January and May for September intake."
+          },
+          {
+            "question": "Can you guarantee admission?",
+            "answer": "While we cannot guarantee admission, our expert guidance significantly improves your chances. We have a strong track record with over 90% of our students receiving offers from their preferred universities."
+          },
+          {
+            "question": "Do you help with scholarship applications?",
+            "answer": "Yes, we provide information about available scholarships and assist with scholarship applications to help make your education more affordable."
+          }
+        ]
+      },
+      "sworn-translations": {
+        "title": "Sworn Translations",
+        "description": "Official certified translations for all your legal documents.",
+        "shortDescription": "Official certified translations for all your legal documents.",
+        "longDescription": "Get your documents officially translated by certified translators recognized by Spanish authorities. Our sworn translations are legally valid for visa applications, university admissions, and all official procedures.",
+        "bullets": [
+          "Certified sworn translators",
+          "Legally recognized translations",
+          "Fast turnaround times",
+          "All document types accepted",
+          "Apostille service coordination",
+          "Digital and physical copies provided"
+        ],
+        "requirements": [
+          "Original documents or certified copies",
+          "Clear scans/photos if submitting digitally",
+          "Specify target language (Spanish, English, etc.)",
+          "Intended use of the translation"
+        ],
+        "timeline": [
+          {
+            "title": "Document Submission",
+            "description": "Send us your documents for translation.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Quote & Confirmation",
+            "description": "Receive a quote and timeline estimate.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Translation",
+            "description": "Certified translator works on your documents.",
+            "duration": "Day 2-5"
+          },
+          {
+            "title": "Quality Check",
+            "description": "Review and certification of the translation.",
+            "duration": "Day 6"
+          },
+          {
+            "title": "Delivery",
+            "description": "Receive your sworn translation with official seal.",
+            "duration": "Day 7"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What documents need sworn translation?",
+            "answer": "Typically: birth certificates, academic transcripts, diplomas, police clearance certificates, marriage certificates, and any legal documents required for visa or university applications."
+          },
+          {
+            "question": "Is sworn translation the same as notarized translation?",
+            "answer": "Sworn translation is performed by officially certified translators and carries legal weight in Spain. It's more specific and recognized than general notarized translations."
+          },
+          {
+            "question": "Do I need apostille as well?",
+            "answer": "Often yes, especially for documents from non-EU countries. We can coordinate apostille services for you."
+          }
+        ]
+      },
+      "student-health-insurance": {
+        "title": "Student Health Insurance",
+        "description": "Comprehensive health insurance coverage for international students.",
+        "shortDescription": "Comprehensive health insurance coverage for international students.",
+        "longDescription": "Stay protected with comprehensive health insurance that meets Spanish visa requirements. We offer affordable plans with extensive coverage, ensuring you have access to quality healthcare throughout your studies.",
+        "bullets": [
+          "Meets Spanish visa requirements",
+          "Comprehensive medical coverage",
+          "Emergency and hospitalization coverage",
+          "Repatriation coverage included",
+          "No waiting period",
+          "Easy claims process"
+        ],
+        "requirements": [
+          "Valid passport copy",
+          "Proof of enrollment or acceptance letter",
+          "Duration of coverage needed",
+          "Personal information (name, date of birth, address)"
+        ],
+        "timeline": [
+          {
+            "title": "Plan Selection",
+            "description": "Choose the insurance plan that fits your needs.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Application",
+            "description": "Complete the insurance application form.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Payment",
+            "description": "Process payment for your chosen plan.",
+            "duration": "Day 2"
+          },
+          {
+            "title": "Policy Issuance",
+            "description": "Receive your insurance certificate and policy details.",
+            "duration": "Day 3"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is health insurance mandatory for student visa?",
+            "answer": "Yes, comprehensive health insurance is a mandatory requirement for Spanish student visa applications. The coverage must meet specific minimum requirements."
+          },
+          {
+            "question": "Can I use Spain's public healthcare?",
+            "answer": "International students can access public healthcare, but private insurance is still required for the visa. Many students prefer private insurance for shorter wait times and English-speaking services."
+          },
+          {
+            "question": "What does the insurance cover?",
+            "answer": "Our plans cover medical consultations, hospitalization, emergency care, prescription medications, diagnostic tests, and repatriation. Specific coverage details vary by plan."
+          }
+        ]
+      },
+      "residence-permit": {
+        "title": "Residence Permit",
+        "description": "Assistance with obtaining and renewing your residence permit.",
+        "shortDescription": "Assistance with obtaining and renewing your residence permit.",
+        "longDescription": "Navigate the Spanish bureaucracy with ease. We guide you through obtaining your TIE (Tarjeta de Identidad de Extranjero) and help with renewals, ensuring you maintain legal residence throughout your studies.",
+        "bullets": [
+          "TIE application assistance",
+          "Appointment scheduling at immigration office",
+          "Document preparation and review",
+          "Accompaniment to appointments (optional)",
+          "Renewal reminders and support",
+          "NIE number assistance"
+        ],
+        "requirements": [
+          "Valid passport with student visa",
+          "Proof of enrollment",
+          "Proof of address in Spain",
+          "Health insurance certificate",
+          "Passport-sized photographs",
+          "Application fees"
+        ],
+        "timeline": [
+          {
+            "title": "Arrival in Spain",
+            "description": "You must apply for TIE within 30 days of arrival.",
+            "duration": "Day 1-30"
+          },
+          {
+            "title": "Document Preparation",
+            "description": "Gather all required documents with our guidance.",
+            "duration": "Week 1"
+          },
+          {
+            "title": "Appointment Booking",
+            "description": "Schedule appointment at immigration office.",
+            "duration": "Week 2"
+          },
+          {
+            "title": "Application Submission",
+            "description": "Submit application at immigration office.",
+            "duration": "Week 3-4"
+          },
+          {
+            "title": "Card Collection",
+            "description": "Collect your TIE card (usually 4-6 weeks after application).",
+            "duration": "Week 8-10"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What's the difference between NIE and TIE?",
+            "answer": "NIE is your foreigner identification number, while TIE is the physical residence card that contains your NIE. You need both for legal residence in Spain."
+          },
+          {
+            "question": "How long is the residence permit valid?",
+            "answer": "Initial student residence permits are typically valid for one year. You can renew them annually for the duration of your studies."
+          },
+          {
+            "question": "What happens if I don't apply within 30 days?",
+            "answer": "Late application can result in fines and complications. We help ensure you meet all deadlines to avoid penalties."
+          }
+        ]
+      },
+      "foundation-year": {
+        "title": "Foundation Year",
+        "description": "Preparatory program to bridge the gap to Spanish university education.",
+        "shortDescription": "Preparatory program to bridge the gap to Spanish university education.",
+        "longDescription": "Not quite ready for direct university entry? Our foundation year program prepares international students for success in Spanish universities through intensive academic and language preparation.",
+        "bullets": [
+          "Academic skills development",
+          "Intensive Spanish language training",
+          "Subject-specific preparation",
+          "University application support",
+          "Cultural orientation and integration",
+          "Guaranteed progression to partner universities"
+        ],
+        "requirements": [
+          "High school diploma or equivalent",
+          "Basic English proficiency",
+          "Motivation to study in Spain",
+          "No Spanish language requirement (we'll teach you)"
+        ],
+        "timeline": [
+          {
+            "title": "Application",
+            "description": "Apply for the foundation year program.",
+            "duration": "3-6 months before"
+          },
+          {
+            "title": "Acceptance",
+            "description": "Receive acceptance and prepare for arrival.",
+            "duration": "2-3 months before"
+          },
+          {
+            "title": "Foundation Year",
+            "description": "Complete intensive academic and language preparation.",
+            "duration": "9-12 months"
+          },
+          {
+            "title": "University Application",
+            "description": "Apply to universities with our support.",
+            "duration": "During foundation year"
+          },
+          {
+            "title": "University Entry",
+            "description": "Progress to your chosen degree program.",
+            "duration": "Following September"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Who needs a foundation year?",
+            "answer": "Students whose qualifications don't directly meet Spanish university entry requirements, or those who need to improve their Spanish language skills before starting a degree program."
+          },
+          {
+            "question": "Is the foundation year recognized?",
+            "answer": "Yes, our foundation year is recognized by partner universities and provides guaranteed progression pathways to degree programs."
+          },
+          {
+            "question": "Can I skip the foundation year?",
+            "answer": "If you meet direct entry requirements (academic qualifications and language proficiency), you can apply directly to universities without a foundation year."
+          }
+        ]
+      },
+      "academic-equivalency": {
+        "title": "Academic Equivalency",
+        "description": "Homologation service to validate your foreign qualifications in Spain.",
+        "shortDescription": "Homologation service to validate your foreign qualifications in Spain.",
+        "longDescription": "Homologation is the process by which the Spanish Ministry of Education recognizes that your secondary school or university qualifications are equivalent to Spanish qualifications. This is often required for university admission and professional practice.",
+        "bullets": [
+          "Complete homologation application support",
+          "Document preparation and translation",
+          "Ministry submission and tracking",
+          "Credential evaluation guidance",
+          "Alternative pathways if needed",
+          "Fast-track options when available"
+        ],
+        "requirements": [
+          "Original academic certificates and transcripts",
+          "Sworn translations of all documents",
+          "Apostille on original documents",
+          "Passport copy",
+          "Completed application forms",
+          "Application fees"
+        ],
+        "timeline": [
+          {
+            "title": "Initial Assessment",
+            "description": "Evaluate your qualifications and determine requirements.",
+            "duration": "Week 1"
+          },
+          {
+            "title": "Document Preparation",
+            "description": "Obtain translations, apostilles, and prepare application.",
+            "duration": "Week 2-4"
+          },
+          {
+            "title": "Submission",
+            "description": "Submit application to Ministry of Education.",
+            "duration": "Week 5"
+          },
+          {
+            "title": "Processing",
+            "description": "Ministry reviews your application (can take several months).",
+            "duration": "3-12 months"
+          },
+          {
+            "title": "Resolution",
+            "description": "Receive homologation certificate.",
+            "duration": "Final stage"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do I need homologation to study in Spain?",
+            "answer": "It depends on your program and university. Many universities accept foreign qualifications directly, but some programs (especially regulated professions) require official homologation."
+          },
+          {
+            "question": "How long does homologation take?",
+            "answer": "The process typically takes 3-12 months, depending on the type of qualification and current processing times at the Ministry of Education."
+          },
+          {
+            "question": "What if my qualifications aren't fully equivalent?",
+            "answer": "The Ministry may grant partial equivalency or require additional coursework. We'll help you understand your options and find the best pathway forward."
+          }
+        ]
+      },
+      "accommodation": {
+        "title": "Accommodation",
+        "description": "Safe, comfortable housing options near your university.",
+        "shortDescription": "Safe, comfortable housing options near your university.",
+        "longDescription": "All accommodation options provided by Aval are thoroughly vetted to ensure they meet our high standards for safety, comfort, and convenience. We help you find the perfect place to call home during your studies in Spain.",
+        "bullets": [
+          "Student residences and shared apartments",
+          "Homestay with Spanish families",
+          "Private studios and apartments",
+          "Near university campuses",
+          "Verified landlords and properties",
+          "Flexible lease terms"
+        ],
+        "requirements": [
+          "University acceptance or enrollment proof",
+          "Preferred location and budget",
+          "Move-in date",
+          "Duration of stay",
+          "Any specific preferences or requirements"
+        ],
+        "timeline": [
+          {
+            "title": "Consultation",
+            "description": "Discuss your preferences and budget.",
+            "duration": "1-2 months before"
+          },
+          {
+            "title": "Property Search",
+            "description": "We identify suitable accommodation options.",
+            "duration": "2-3 weeks"
+          },
+          {
+            "title": "Virtual Tours",
+            "description": "View properties via video calls or photos.",
+            "duration": "1 week"
+          },
+          {
+            "title": "Booking",
+            "description": "Secure your accommodation with deposit.",
+            "duration": "2-4 weeks before arrival"
+          },
+          {
+            "title": "Move-in",
+            "description": "We assist with check-in and settling in.",
+            "duration": "Arrival day"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "When should I start looking for accommodation?",
+            "answer": "We recommend starting your search 2-3 months before your arrival, especially for September intake when demand is highest."
+          },
+          {
+            "question": "What's included in the rent?",
+            "answer": "This varies by property. Some include utilities (water, electricity, internet), while others charge separately. We'll clarify all costs upfront."
+          },
+          {
+            "question": "Can I view the accommodation before booking?",
+            "answer": "We provide virtual tours for international students. If you're already in Spain, we can arrange in-person viewings."
+          }
+        ]
+      },
+      "other-services": {
+        "title": "Other Services",
+        "description": "Additional support services for your academic and personal success.",
+        "shortDescription": "Additional support services for your academic and personal success.",
+        "longDescription": "Beyond our core services, we offer comprehensive support for various academic and administrative needs. From airport pickup to expert academic solutions, we're here to help you succeed in every aspect of your Spanish education journey.",
+        "bullets": [
+          "Airport Pickup (Valencia and Madrid) - Safe and reliable transportation from the airport to your accommodation",
+          "CV/Resume Writing - Professional, ATS-friendly designs that highlight your achievements",
+          "Research Assistance - Navigating complex academic projects with comprehensive support throughout your research journey, ensuring clarity, depth, and academic rigor",
+          "Proofreading & Editing - Ensure your work is error-free and impactful. Our editing services go beyond grammar to improve flow, clarity, and tone",
+          "Motivation Letters & Statements of Purpose - Your grades show what you know, but your motivation letter shows who you are. We help you craft a compelling narrative that proves to the admissions committee why you are the perfect candidate for their program",
+          "Expert Academic Solutions for all your needs"
+        ],
+        "requirements": [
+          "Varies by specific service needed",
+          "Contact us to discuss your requirements"
+        ],
+        "timeline": [
+          {
+            "title": "Consultation",
+            "description": "Discuss your specific needs with our team.",
+            "duration": "Day 1"
+          },
+          {
+            "title": "Service Planning",
+            "description": "We create a customized support plan.",
+            "duration": "Day 2-3"
+          },
+          {
+            "title": "Implementation",
+            "description": "Receive the support services you need.",
+            "duration": "Varies"
+          },
+          {
+            "title": "Follow-up",
+            "description": "Ongoing support as needed.",
+            "duration": "Ongoing"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do you offer services not listed on your website?",
+            "answer": "Yes! We provide many additional services based on student needs. Contact us to discuss any specific requirements you have."
+          },
+          {
+            "question": "What cities do you provide airport pickup service?",
+            "answer": "We currently provide airport pickup services in Valencia and Madrid. Contact us if you need pickup from other locations."
+          },
+          {
+            "question": "Do you provide ongoing support after arrival?",
+            "answer": "Yes, we remain available to assist you throughout your studies in Spain. Many of our students stay in touch for years."
+          }
+        ]
+      }
+    }
+  },
+  "form": {
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "phoneWhatsapp": "Phone / WhatsApp",
+    "message": "Message",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "john@example.com",
+    "phonePlaceholder": "+34 123 456 789",
+    "messagePlaceholder": "Tell us about your study plans...",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "successMessage": "Thank you! We'll get back to you within 24 hours.",
+    "errorMessage": "Something went wrong. Please try again or contact us directly.",
+    "nameError": "Name must be at least 2 characters",
+    "emailError": "Invalid email address",
+    "messageError": "Message must be at least 10 characters"
+  },
+  "universities": {
+    "title": "Universities in Spain",
+    "subtitle": "Discover world-class education opportunities across Spain",
+    "higherEducationTitle": "Spain's Higher Education System",
+    "higherEducationDesc1": "Spain's higher education sector comprises 89 universities, with 50 public and 39 private institutions. Spanish universities are globally recognized for their academic excellence and innovative programs.",
+    "higherEducationDesc2": "From historic institutions like the University of Salamanca (one of the oldest in the world) to modern business schools, Spain offers diverse educational opportunities for international students.",
+    "totalUniversities": "Total Universities",
+    "publicUniversities": "Public Universities",
+    "popularDestinations": "Popular Study Destinations",
+    "popularFields": "Popular Fields of Study",
+    "needHelpTitle": "Need Help Choosing a University?",
+    "needHelpDesc": "Our expert team will help you find the perfect university based on your academic goals, budget, and preferences. We handle the entire application process from start to finish.",
+    "learnAdmissions": "Learn About Our Admissions Service",
+    "cities": {
+      "madrid": {
+        "name": "Madrid",
+        "description": "Spain's capital offers prestigious universities and vibrant student life",
+        "universities": "15+ universities"
+      },
+      "barcelona": {
+        "name": "Barcelona",
+        "description": "Innovative programs in a cosmopolitan Mediterranean city",
+        "universities": "12+ universities"
+      },
+      "valencia": {
+        "name": "Valencia",
+        "description": "Affordable education with excellent quality of life",
+        "universities": "8+ universities"
+      },
+      "seville": {
+        "name": "Seville",
+        "description": "Rich cultural heritage and historic academic institutions",
+        "universities": "6+ universities"
+      },
+      "salamanca": {
+        "name": "Salamanca",
+        "description": "Home to one of the world's oldest universities",
+        "universities": "4+ universities"
+      },
+      "granada": {
+        "name": "Granada",
+        "description": "Beautiful setting with strong international student community",
+        "universities": "5+ universities"
+      }
+    },
+    "fields": {
+      "business": {
+        "name": "Business & Management",
+        "description": "Top-ranked business schools and MBA programs"
+      },
+      "engineering": {
+        "name": "Engineering",
+        "description": "Cutting-edge technology and research facilities"
+      },
+      "arts": {
+        "name": "Arts & Humanities",
+        "description": "Rich cultural programs and language studies"
+      },
+      "medicine": {
+        "name": "Medicine & Health",
+        "description": "World-class medical education and training"
+      }
+    }
+  },
+  "cta": {
+    "startApplication": "Start your application today",
+    "navigateProcess": "Let us help you navigate the university application process",
+    "applyNow": "Apply Now",
+    "contactUs": "Contact Us",
+    "readyToStart": "Ready to start your Spanish education journey?",
+    "joinSuccessful": "Join hundreds of successful students who trusted us with their dreams",
+    "viewServices": "View Our Services",
+    "bookConsultation": "Book a Free Consultation"
+  },
+  "about": {
+    "title": "About Aval Student Services",
+    "intro1": "For 8 years, we've been helping students from around the world achieve their dreams of studying in Spain. Our experienced team of professionals is dedicated to providing comprehensive support at every step of your journey.",
+    "intro2": "We understand that studying abroad is a life-changing decision, and we're here to make the process as smooth and stress-free as possible.",
+    "startJourney": "Start Your Journey",
+    "ourVision": "Our Vision",
+    "visionTitle": "We seek to become leaders in providing distinguished and innovative student services",
+    "visionDesc": "We are aiming to enhance student success and achieve their academic and professional ambitions. We envision a world where every student can access the best education opportunities regardless of their geographical location or financial status, and we strive to make this vision a reality through our dedicated services.",
+    "ourMission": "Our Mission",
+    "missionTitle": "Providing innovative and effective educational programs",
+    "missionDesc": "Providing innovative and effective educational programs to enhance student achievement and develop their academic skills. We are committed to providing the best possible service while fully maintaining privacy. Our mission is to empower students by providing comprehensive support and guidance, enabling them to navigate the complexities of international education and achieve their aspirations with confidence.",
+    "whyChoose": "Why Choose Aval?",
+    "whyChooseSubtitle": "What sets us apart from other student service providers",
+    "experience": "8 Years of Experience",
+    "experienceDesc": "Nearly a decade of successfully helping students achieve their study abroad dreams in Spain.",
+    "personalizedSupport": "Personalized Support",
+    "personalizedDesc": "Every student receives individual attention and customized guidance based on their unique needs and goals.",
+    "endToEnd": "End-to-End Service",
+    "endToEndDesc": "From initial consultation to settling in Spain, we support you at every stage of your journey.",
+    "highSuccess": "High Success Rate",
+    "highSuccessDesc": "Over 95% of our students successfully obtain their visas and university admissions.",
+    "expertTeam": "Expert Team",
+    "expertTeamDesc": "Our team consists of experienced professionals who understand both Spanish education and international student needs.",
+    "transparentPricing": "Transparent Pricing",
+    "transparentPricingDesc": "No hidden fees or surprises. We provide clear pricing and comprehensive service packages."
+  },
+  "apply": {
+    "title": "Apply Now",
+    "subtitle": "Complete this form to start your journey to studying in Spain",
+    "steps": {
+      "personal": "Personal Information",
+      "study": "Study Plans",
+      "services": "Services Needed",
+      "review": "Review & Submit"
+    },
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "nationality": "Nationality",
+    "desiredProgram": "Desired Program / Field of Study",
+    "studyLevel": "Study Level",
+    "selectLevel": "Select level",
+    "bachelor": "Bachelor's Degree",
+    "master": "Master's Degree",
+    "phd": "PhD / Doctorate",
+    "languageCourse": "Language Course",
+    "other": "Other",
+    "intakeYear": "Intake Year",
+    "semester": "Semester",
+    "selectSemester": "Select semester",
+    "fall": "Fall (September)",
+    "spring": "Spring (January)",
+    "selectServices": "Select Services You Need",
+    "reviewInfo": "Review Your Information",
+    "name": "Name",
+    "program": "Program",
+    "intake": "Intake",
+    "servicesSelected": "selected",
+    "additionalInfo": "Additional Information (Optional)",
+    "additionalPlaceholder": "Any additional information you'd like to share...",
+    "privacyConsent": "By submitting this form, you agree to our privacy policy and consent to be contacted by Aval Student Services regarding your application.",
+    "back": "Back",
+    "next": "Next",
+    "submitting": "Submitting...",
+    "submitApplication": "Submit Application",
+    "successTitle": "Application Submitted!",
+    "successMessage": "Thank you for your application. We'll review your information and get back to you within 24-48 hours via email.",
+    "checkEmail": "Check your email for a confirmation message with next steps.",
+    "returnHome": "Return to Home",
+    "firstNameError": "First name must be at least 2 characters",
+    "lastNameError": "Last name must be at least 2 characters",
+    "phoneError": "Phone number is required",
+    "nationalityError": "Nationality is required",
+    "programError": "Program is required",
+    "yearError": "Year is required",
+    "servicesError": "Select at least one service"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to answer your questions and help you start your journey",
+    "email": "Email Us",
+    "emailDesc": "Send us an email anytime",
+    "call": "Call Us",
+    "callDesc": "Mon-Fri from 9am to 6pm",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Chat with us instantly",
+    "startChat": "Start Chat",
+    "sendMessage": "Send Us a Message",
+    "messageDesc": "Fill out the form and we'll get back to you within 24 hours on business days.",
+    "visitOffice": "Visit Our Office",
+    "location": "Location",
+    "officeHours": "Office Hours",
+    "closed": "Saturday - Sunday: Closed",
+    "inPerson": "Prefer to talk in person?",
+    "inPersonDesc": "Schedule a free consultation at our office. We'll discuss your study plans and answer all your questions.",
+    "bookConsultation": "Book a Consultation"
+  },
+  "footer": {
+    "description": "Helping students achieve their dreams of studying in Spain",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "contactUs": "Contact Us",
+    "rights": "All rights reserved."
+  },
+  "serviceCategories": {
+    "beforeArrival": "Before You Arrive",
+    "beforeArrivalDesc": "Essential services to prepare you for your journey to Spain",
+    "onArrival": "When You Arrive",
+    "onArrivalDesc": "Support services for your first days in Spain",
+    "settlingIn": "Settling In",
+    "settlingInDesc": "Ongoing support to help you thrive in your new home",
+    "viewAll": "View All Services"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive support for every stage of your journey to studying in Spain",
+    "ctaTitle": "Ready to get started?",
+    "ctaDescription": "Book a free consultation to discuss your study plans",
+    "ctaPrimary": "Book a Free Consultation",
+    "ctaSecondary": "Contact Us"
+  },
+  "studyInSpain": {
+    "title": "Study in Spain",
+    "subtitle": "Discover why Spain is the perfect destination for your education",
+    "whySpain": {
+      "title": "Why Study in Spain?",
+      "paragraph1": "Spain is an interesting and rich country, with plenty of opportunities to learn, advance, and socialize. It is a country that offers the best of both worlds – a laid-back lifestyle with a strong focus on education. Spanish universities have a long tradition of academic excellence and are globally recognized for their high-quality programs.",
+      "paragraph2": "The quality of education in Spain is continuously monitored and evaluated by the government, ensuring that students receive a top-notch education."
+    },
+    "universities": {
+      "title": "How many communities are there in Spain?",
+      "description": "Its higher education sector comprises 89 Spanish universities, out of which 50 are public and 39 are private universities, which include some of the best business schools. Spain is also home to Salamanca University which is one of the oldest universities in the world.",
+      "cta": "Join Us Now"
+    }
+  },
+  "spainByNumbers": {
+    "title": "Spain by the Numbers",
+    "subtitle": "Fascinating facts about your future study destination"
+  },
+  "visionMission": {
+    "vision": {
+      "title": "We seek to become leaders in providing distinguished and innovative student services",
+      "description": "We are aiming to enhance student success and achieve their academic and professional ambitions. We envision a world where every student can access the best education opportunities regardless of their geographical location or financial status, and we strive to make this vision a reality through our dedicated services."
+    },
+    "mission": {
+      "title": "Providing innovative and effective educational programs",
+      "description": "Providing innovative and effective educational programs to enhance student achievement and develop their academic skills. We are committed to providing the best possible service while fully maintaining privacy. Our mission is to empower students by providing comprehensive support and guidance, enabling them to navigate the complexities of international education and achieve their aspirations with confidence."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about studying in Spain",
+    "items": [
+      {
+        "question": "How long does the visa application process take?",
+        "answer": "The student visa process typically takes 4-8 weeks from the time you submit your complete application. We recommend starting the process at least 3 months before your intended start date to allow time for document preparation and any unforeseen delays."
+      },
+      {
+        "question": "What documents do I need to study in Spain?",
+        "answer": "Essential documents include: valid passport, university acceptance letter, proof of financial means, health insurance, background check certificate, and academic transcripts. We provide a complete checklist and guide you through obtaining each document."
+      },
+      {
+        "question": "Do I need to speak Spanish to study in Spain?",
+        "answer": "It depends on your program. Many universities offer programs in English, especially at the master's level. However, learning Spanish is highly recommended for daily life and integration. We offer Spanish language courses to help you prepare."
+      },
+      {
+        "question": "How much does it cost to study in Spain?",
+        "answer": "Costs vary by university and program. Public universities typically charge €1,000-€3,500 per year for bachelor's programs, while private universities range from €6,000-€20,000. Living expenses average €800-€1,200 per month depending on the city."
+      },
+      {
+        "question": "Can I work while studying in Spain?",
+        "answer": "Yes, international students can work up to 20 hours per week during term time and full-time during holidays. You'll need to obtain a work permit, which we can help you with once you arrive in Spain."
+      },
+      {
+        "question": "How do I contact Aval Student Services?",
+        "answer": "You can reach us via our contact form, WhatsApp, email, or phone. We typically respond within 24 hours on business days. For urgent matters, WhatsApp is the fastest way to reach our team."
+      }
+    ]
+  },
+  "trustUs": {
+    "title": "They Trust Us"
+  }
+}

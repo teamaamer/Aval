@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from 'next-intl/server';
 import { GraduationCap, MapPin, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,14 +13,16 @@ export const metadata: Metadata = {
   description: "Explore top universities in Spain. We help you find and apply to the perfect institution for your academic goals.",
 };
 
-export default function UniversitiesPage() {
+export default async function UniversitiesPage() {
+  const t = await getTranslations('universities');
+  const tCta = await getTranslations('cta');
   return (
     <>
       <section className="pt-32 pb-16 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
           <SectionHeading
-            title="Universities in Spain"
-            subtitle="Discover world-class education opportunities across Spain"
+            title={t('title')}
+            subtitle={t('subtitle')}
             centered
           />
         </div>
@@ -30,25 +33,20 @@ export default function UniversitiesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Spain&apos;s Higher Education System
+                {t('higherEducationTitle')}
               </h2>
               <p className="text-muted-foreground mb-4">
-                Spain&apos;s higher education sector comprises 89 universities, with 50
-                public and 39 private institutions. Spanish universities are
-                globally recognized for their academic excellence and innovative
-                programs.
+                {t('higherEducationDesc1')}
               </p>
               <p className="text-muted-foreground mb-6">
-                From historic institutions like the University of Salamanca (one of
-                the oldest in the world) to modern business schools, Spain offers
-                diverse educational opportunities for international students.
+                {t('higherEducationDesc2')}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <Card>
                   <CardContent className="pt-6">
                     <div className="text-3xl font-bold text-primary mb-2">89</div>
                     <p className="text-sm text-muted-foreground">
-                      Total Universities
+                      {t('totalUniversities')}
                     </p>
                   </CardContent>
                 </Card>
@@ -56,7 +54,7 @@ export default function UniversitiesPage() {
                   <CardContent className="pt-6">
                     <div className="text-3xl font-bold text-primary mb-2">50</div>
                     <p className="text-sm text-muted-foreground">
-                      Public Universities
+                      {t('publicUniversities')}
                     </p>
                   </CardContent>
                 </Card>
@@ -75,58 +73,21 @@ export default function UniversitiesPage() {
 
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Popular Study Destinations
+              {t('popularDestinations')}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  city: "Madrid",
-                  description:
-                    "Spain's capital offers prestigious universities and vibrant student life",
-                  universities: "15+ universities",
-                },
-                {
-                  city: "Barcelona",
-                  description:
-                    "Innovative programs in a cosmopolitan Mediterranean city",
-                  universities: "12+ universities",
-                },
-                {
-                  city: "Valencia",
-                  description:
-                    "Affordable education with excellent quality of life",
-                  universities: "8+ universities",
-                },
-                {
-                  city: "Seville",
-                  description:
-                    "Rich cultural heritage and historic academic institutions",
-                  universities: "6+ universities",
-                },
-                {
-                  city: "Salamanca",
-                  description:
-                    "Home to one of the world's oldest universities",
-                  universities: "4+ universities",
-                },
-                {
-                  city: "Granada",
-                  description:
-                    "Beautiful setting with strong international student community",
-                  universities: "5+ universities",
-                },
-              ].map((destination, index) => (
+              {['madrid', 'barcelona', 'valencia', 'seville', 'salamanca', 'granada'].map((cityKey, index) => (
                 <Card key={index}>
                   <CardContent className="pt-6">
                     <div className="flex items-center gap-2 mb-3">
                       <MapPin className="h-5 w-5 text-primary" />
-                      <h3 className="text-xl font-semibold">{destination.city}</h3>
+                      <h3 className="text-xl font-semibold">{t(`cities.${cityKey}.name`)}</h3>
                     </div>
                     <p className="text-muted-foreground mb-3">
-                      {destination.description}
+                      {t(`cities.${cityKey}.description`)}
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      {destination.universities}
+                      {t(`cities.${cityKey}.universities`)}
                     </p>
                   </CardContent>
                 </Card>
@@ -136,30 +97,14 @@ export default function UniversitiesPage() {
 
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Popular Fields of Study
+              {t('popularFields')}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                {
-                  icon: GraduationCap,
-                  field: "Business & Management",
-                  description: "Top-ranked business schools and MBA programs",
-                },
-                {
-                  icon: Award,
-                  field: "Engineering",
-                  description: "Cutting-edge technology and research facilities",
-                },
-                {
-                  icon: Users,
-                  field: "Arts & Humanities",
-                  description: "Rich cultural programs and language studies",
-                },
-                {
-                  icon: GraduationCap,
-                  field: "Medicine & Health",
-                  description: "World-class medical education and training",
-                },
+                { key: 'business', icon: GraduationCap },
+                { key: 'engineering', icon: Award },
+                { key: 'arts', icon: Users },
+                { key: 'medicine', icon: GraduationCap },
               ].map((field, index) => {
                 const Icon = field.icon;
                 return (
@@ -168,9 +113,9 @@ export default function UniversitiesPage() {
                       <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                         <Icon className="h-6 w-6 text-primary" />
                       </div>
-                      <h3 className="font-semibold mb-2">{field.field}</h3>
+                      <h3 className="font-semibold mb-2">{t(`fields.${field.key}.name`)}</h3>
                       <p className="text-sm text-muted-foreground">
-                        {field.description}
+                        {t(`fields.${field.key}.description`)}
                       </p>
                     </CardContent>
                   </Card>
@@ -183,12 +128,10 @@ export default function UniversitiesPage() {
             <CardContent className="p-8 md:p-12">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-4">
-                  Need Help Choosing a University?
+                  {t('needHelpTitle')}
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Our expert team will help you find the perfect university based on
-                  your academic goals, budget, and preferences. We handle the entire
-                  application process from start to finish.
+                  {t('needHelpDesc')}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg">
@@ -196,7 +139,7 @@ export default function UniversitiesPage() {
                   </Button>
                   <Button asChild size="lg" variant="outline">
                     <Link href="/services/university-admissions">
-                      Learn About Our Admissions Service
+                      {t('learnAdmissions')}
                     </Link>
                   </Button>
                 </div>
@@ -207,11 +150,11 @@ export default function UniversitiesPage() {
       </section>
 
       <CTASection
-        title="Start your application today"
-        description="Let us help you navigate the university application process"
-        primaryButtonText="Apply Now"
+        title={tCta('startApplication')}
+        description={tCta('navigateProcess')}
+        primaryButtonText={tCta('applyNow')}
         primaryButtonHref="/apply"
-        secondaryButtonText="Contact Us"
+        secondaryButtonText={tCta('contactUs')}
         secondaryButtonHref="/contact"
       />
     </>

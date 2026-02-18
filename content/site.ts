@@ -5,7 +5,7 @@ export const siteConfig = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+34123456789",
   email: "info@avalstudentservices.com",
   phone: "+34 123 456 789",
-  address: "Madrid, Spain",
+  address: "Avinguda del Cardenal Benlloch, 93, bajo, El Llano del Real, 46021 València, Valencia, Spain",
   hours: "Monday - Friday: 9:00 AM - 6:00 PM",
   social: {
     facebook: "https://facebook.com/avalstudentservices",

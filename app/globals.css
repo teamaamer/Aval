@@ -3,6 +3,7 @@
 @theme {
   --font-sans: var(--font-urbanist), sans-serif;
   --font-heading: var(--font-bricolage), sans-serif;
+  --font-arabic: var(--font-arabic), sans-serif;
   
   --radius-lg: 0.5rem;
   --radius-md: calc(0.5rem - 2px);
@@ -69,4 +70,14 @@ body {
 
 .text-balance {
   text-wrap: balance;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic), sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-arabic * {
+  font-family: var(--font-arabic), sans-serif;
 }

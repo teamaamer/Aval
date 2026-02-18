@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -43,6 +44,9 @@ type FormData = z.infer<typeof stepSchemas[0]> &
   z.infer<typeof stepSchemas[3]>;
 
 export default function ApplyPage() {
+  const t = useTranslations('apply');
+  const tForm = useTranslations('form');
+  const tServices = useTranslations('services');
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<Partial<FormData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -62,10 +66,10 @@ export default function ApplyPage() {
   const servicesNeeded = (watch("servicesNeeded") as string[]) || [];
 
   const steps = [
-    "Personal Information",
-    "Study Plans",
-    "Services Needed",
-    "Review & Submit",
+    t('steps.personal'),
+    t('steps.study'),
+    t('steps.services'),
+    t('steps.review'),
   ];
 
   const onNext = (data: any) => {
@@ -112,17 +116,16 @@ export default function ApplyPage() {
               <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="h-8 w-8 text-green-600" />
               </div>
-              <h1 className="text-3xl font-bold mb-4">Application Submitted!</h1>
+              <h1 className="text-3xl font-bold mb-4">{t('successTitle')}</h1>
               <p className="text-muted-foreground mb-8">
-                Thank you for your application. We&apos;ll review your information and
-                get back to you within 24-48 hours via email.
+                {t('successMessage')}
               </p>
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Check your email for a confirmation message with next steps.
+                  {t('checkEmail')}
                 </p>
                 <Button asChild>
-                  <a href="/">Return to Home</a>
+                  <a href="/">{t('returnHome')}</a>
                 </Button>
               </div>
             </CardContent>
@@ -136,9 +139,9 @@ export default function ApplyPage() {
     <div className="min-h-screen pt-32 pb-16 bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-center">Apply Now</h1>
+          <h1 className="text-4xl font-bold mb-4 text-center">{t('title')}</h1>
           <p className="text-center text-muted-foreground mb-8">
-            Complete this form to start your journey to studying in Spain
+            {t('subtitle')}
           </p>
 
           <div className="mb-8">
@@ -188,7 +191,7 @@ export default function ApplyPage() {
                   <div className="space-y-4">
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="firstName">First Name *</Label>
+                        <Label htmlFor="firstName">{t('firstName')} *</Label>
                         <Input
                           id="firstName"
                           {...register("firstName")}
@@ -202,7 +205,7 @@ export default function ApplyPage() {
                         )}
                       </div>
                       <div>
-                        <Label htmlFor="lastName">Last Name *</Label>
+                        <Label htmlFor="lastName">{t('lastName')} *</Label>
                         <Input
                           id="lastName"
                           {...register("lastName")}
@@ -218,7 +221,7 @@ export default function ApplyPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label htmlFor="email">{tForm('emailAddress')} *</Label>
                       <Input
                         id="email"
                         type="email"
@@ -234,7 +237,7 @@ export default function ApplyPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="phone">Phone / WhatsApp *</Label>
+                      <Label htmlFor="phone">{tForm('phoneWhatsapp')} *</Label>
                       <Input
                         id="phone"
                         {...register("phone")}
@@ -249,7 +252,7 @@ export default function ApplyPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="nationality">Nationality *</Label>
+                      <Label htmlFor="nationality">{t('nationality')} *</Label>
                       <NationalitySelect
                         value={watch("nationality")}
                         onValueChange={(value) => setValue("nationality", value)}
@@ -263,7 +266,7 @@ export default function ApplyPage() {
                   <div className="space-y-4">
                     <div>
                       <Label htmlFor="desiredProgram">
-                        Desired Program / Field of Study *
+                        {t('desiredProgram')} *
                       </Label>
                       <Input
                         id="desiredProgram"
@@ -279,18 +282,18 @@ export default function ApplyPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="studyLevel">Study Level *</Label>
+                      <Label htmlFor="studyLevel">{t('studyLevel')} *</Label>
                       <select
                         id="studyLevel"
                         {...register("studyLevel")}
                         className="flex h-11 w-full rounded-xl border border-input bg-background px-4 py-2 text-sm mt-1.5"
                       >
-                        <option value="">Select level</option>
-                        <option value="bachelor">Bachelor&apos;s Degree</option>
-                        <option value="master">Master&apos;s Degree</option>
-                        <option value="phd">PhD / Doctorate</option>
-                        <option value="language">Language Course</option>
-                        <option value="other">Other</option>
+                        <option value="">{t('selectLevel')}</option>
+                        <option value="bachelor">{t('bachelor')}</option>
+                        <option value="master">{t('master')}</option>
+                        <option value="phd">{t('phd')}</option>
+                        <option value="language">{t('languageCourse')}</option>
+                        <option value="other">{t('other')}</option>
                       </select>
                       {errors.studyLevel && (
                         <p className="text-sm text-red-600 mt-1">
@@ -301,7 +304,7 @@ export default function ApplyPage() {
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="intakeYear">Intake Year *</Label>
+                        <Label htmlFor="intakeYear">{t('intakeYear')} *</Label>
                         <Input
                           id="intakeYear"
                           {...register("intakeYear")}
@@ -315,15 +318,15 @@ export default function ApplyPage() {
                         )}
                       </div>
                       <div>
-                        <Label htmlFor="intakeSemester">Semester *</Label>
+                        <Label htmlFor="intakeSemester">{t('semester')} *</Label>
                         <select
                           id="intakeSemester"
                           {...register("intakeSemester")}
                           className="flex h-11 w-full rounded-xl border border-input bg-background px-4 py-2 text-sm mt-1.5"
                         >
-                          <option value="">Select semester</option>
-                          <option value="fall">Fall (September)</option>
-                          <option value="spring">Spring (January)</option>
+                          <option value="">{t('selectSemester')}</option>
+                          <option value="fall">{t('fall')}</option>
+                          <option value="spring">{t('spring')}</option>
                         </select>
                         {errors.intakeSemester && (
                           <p className="text-sm text-red-600 mt-1">
@@ -337,7 +340,7 @@ export default function ApplyPage() {
 
                 {currentStep === 2 && (
                   <div className="space-y-4">
-                    <Label>Select Services You Need *</Label>
+                    <Label>{t('selectServices')} *</Label>
                     <div className="space-y-3">
                       {services.map((service) => (
                         <div key={service.slug} className="flex items-start space-x-3">
@@ -355,9 +358,9 @@ export default function ApplyPage() {
                             htmlFor={service.slug}
                             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
                           >
-                            <div>{service.title}</div>
+                            <div>{tServices(`items.${service.slug}.title`)}</div>
                             <div className="text-muted-foreground font-normal">
-                              {service.shortDescription}
+                              {tServices(`items.${service.slug}.shortDescription`)}
                             </div>
                           </label>
                         </div>
@@ -374,55 +377,53 @@ export default function ApplyPage() {
                 {currentStep === 3 && (
                   <div className="space-y-6">
                     <div className="bg-muted/50 p-6 rounded-xl space-y-4">
-                      <h3 className="font-semibold">Review Your Information</h3>
+                      <h3 className="font-semibold">{t('reviewInfo')}</h3>
                       <div className="space-y-2 text-sm">
                         <p>
-                          <span className="font-medium">Name:</span>{" "}
+                          <span className="font-medium">{t('name')}:</span>{" "}
                           {(formData as any).firstName} {(formData as any).lastName}
                         </p>
                         <p>
-                          <span className="font-medium">Email:</span> {(formData as any).email}
+                          <span className="font-medium">{tForm('emailAddress')}:</span> {(formData as any).email}
                         </p>
                         <p>
-                          <span className="font-medium">Phone:</span> {(formData as any).phone}
+                          <span className="font-medium">{tForm('phoneWhatsapp')}:</span> {(formData as any).phone}
                         </p>
                         <p>
-                          <span className="font-medium">Nationality:</span>{" "}
+                          <span className="font-medium">{t('nationality')}:</span>{" "}
                           {(formData as any).nationality}
                         </p>
                         <p>
-                          <span className="font-medium">Program:</span>{" "}
+                          <span className="font-medium">{t('program')}:</span>{" "}
                           {(formData as any).desiredProgram}
                         </p>
                         <p>
-                          <span className="font-medium">Intake:</span>{" "}
-                          {(formData as any).intakeSemester === "fall" ? "Fall" : "Spring"}{" "}
+                          <span className="font-medium">{t('intake')}:</span>{" "}
+                          {(formData as any).intakeSemester === "fall" ? t('fall').split(' ')[0] : t('spring').split(' ')[0]}{" "}
                           {(formData as any).intakeYear}
                         </p>
                         <p>
-                          <span className="font-medium">Services:</span>{" "}
-                          {(formData as any).servicesNeeded?.length || 0} selected
+                          <span className="font-medium">{t('selectServices')}:</span>{" "}
+                          {(formData as any).servicesNeeded?.length || 0} {t('servicesSelected')}
                         </p>
                       </div>
                     </div>
 
                     <div>
                       <Label htmlFor="additionalInfo">
-                        Additional Information (Optional)
+                        {t('additionalInfo')}
                       </Label>
                       <Textarea
                         id="additionalInfo"
                         {...register("additionalInfo")}
-                        placeholder="Any additional information you'd like to share..."
+                        placeholder={t('additionalPlaceholder')}
                         className="mt-1.5"
                         rows={4}
                       />
                     </div>
 
                     <p className="text-sm text-muted-foreground">
-                      By submitting this form, you agree to our privacy policy and
-                      consent to be contacted by Aval Student Services regarding your
-                      application.
+                      {t('privacyConsent')}
                     </p>
                   </div>
                 )}
@@ -430,7 +431,7 @@ export default function ApplyPage() {
                 <div className="flex justify-between mt-8">
                   {currentStep > 0 && (
                     <Button type="button" variant="outline" onClick={onBack}>
-                      Back
+                      {t('back')}
                     </Button>
                   )}
                   <Button
@@ -441,12 +442,12 @@ export default function ApplyPage() {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Submitting...
+                        {t('submitting')}
                       </>
                     ) : currentStep === steps.length - 1 ? (
-                      "Submit Application"
+                      t('submitApplication')
                     ) : (
-                      "Next"
+                      t('next')
                     )}
                   </Button>
                 </div>

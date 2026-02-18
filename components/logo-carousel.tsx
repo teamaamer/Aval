@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 const logos = [
   { name: "AI Planning Institute", src: "/logos/aiplanginstitute.png" },
@@ -14,10 +15,12 @@ const logos = [
 ];
 
 export function LogoCarousel() {
+  const t = useTranslations('trustUs');
+  
   return (
     <div className="w-full overflow-hidden bg-muted/20 py-8">
       <div className="container mx-auto px-4">
-        <h3 className="text-2xl font-semibold text-center mb-8">They Trust Us</h3>
+        <h3 className="text-2xl font-semibold text-center mb-8">{t('title')}</h3>
         <div className="relative">
           <motion.div
             className="flex gap-12 items-center"

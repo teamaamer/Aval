@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,16 +12,22 @@ import { Label } from "@/components/ui/label";
 import { trackEvent } from "@/lib/analytics";
 import { Loader2 } from "lucide-react";
 
-const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string().optional(),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+type ContactFormData = {
+  name: string;
+  email: string;
+  phone?: string;
+  message: string;
+};
 
 export function ContactForm() {
+  const t = useTranslations('form');
+  
+  const contactSchema = z.object({
+    name: z.string().min(2, t('nameError')),
+    email: z.string().email(t('emailError')),
+    phone: z.string().optional(),
+    message: z.string().min(10, t('messageError')),
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -62,11 +69,11 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
-        <Label htmlFor="name">Full Name *</Label>
+        <Label htmlFor="name">{t('fullName')} *</Label>
         <Input
           id="name"
           {...register("name")}
-          placeholder="John Doe"
+          placeholder={t('namePlaceholder')}
           className="mt-1.5"
         />
         {errors.name && (
@@ -75,12 +82,12 @@ export function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="email">Email Address *</Label>
+        <Label htmlFor="email">{t('emailAddress')} *</Label>
         <Input
           id="email"
           type="email"
           {...register("email")}
-          placeholder="john@example.com"
+          placeholder={t('emailPlaceholder')}
           className="mt-1.5"
         />
         {errors.email && (
@@ -89,11 +96,11 @@ export function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="phone">Phone / WhatsApp</Label>
+        <Label htmlFor="phone">{t('phoneWhatsapp')}</Label>
         <Input
           id="phone"
           {...register("phone")}
-          placeholder="+34 123 456 789"
+          placeholder={t('phonePlaceholder')}
           className="mt-1.5"
         />
         {errors.phone && (
@@ -102,11 +109,11 @@ export function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="message">Message *</Label>
+        <Label htmlFor="message">{t('message')} *</Label>
         <Textarea
           id="message"
           {...register("message")}
-          placeholder="Tell us about your study plans..."
+          placeholder={t('messagePlaceholder')}
           className="mt-1.5"
           rows={5}
         />
@@ -117,13 +124,13 @@ export function ContactForm() {
 
       {submitStatus === "success" && (
         <div className="p-4 bg-green-50 border border-green-200 rounded-xl text-green-800 text-sm">
-          Thank you! We&apos;ll get back to you within 24 hours.
+          {t('successMessage')}
         </div>
       )}
 
       {submitStatus === "error" && (
         <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-800 text-sm">
-          Something went wrong. Please try again or contact us directly.
+          {t('errorMessage')}
         </div>
       )}
 
@@ -131,10 +138,10 @@ export function ContactForm() {
         {isSubmitting ? (
           <>
             <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-            Sending...
+            {t('sending')}
           </>
         ) : (
-          "Send Message"
+          t('sendMessage')
         )}
       </Button>
     </form>
