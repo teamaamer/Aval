@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from 'next-intl/server';
-import { GraduationCap, MapPin, Users, Award } from "lucide-react";
+import { GraduationCap, MapPin, Users, Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { SectionHeading } from "@/components/section-heading";
 import { CTASection } from "@/components/cta-section";
 
@@ -146,6 +147,172 @@ export default async function UniversitiesPage() {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <SectionHeading
+            title={t('admissions.title')}
+            subtitle={t('admissions.subtitle')}
+            centered
+            className="mb-12"
+          />
+
+          <Tabs defaultValue="bachelors" className="w-full">
+            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-8">
+              <TabsTrigger value="bachelors">{t('admissions.bachelors.title')}</TabsTrigger>
+              <TabsTrigger value="masters">{t('admissions.masters.title')}</TabsTrigger>
+              <TabsTrigger value="phd">{t('admissions.phd.title')}</TabsTrigger>
+            </TabsList>
+
+            {/* Bachelor's Degree Tab */}
+            <TabsContent value="bachelors">
+              <Card>
+                <CardContent className="p-8 md:p-12">
+                  <div className="prose prose-lg max-w-none mb-8">
+                    <p className="text-muted-foreground mb-4">
+                      {t('admissions.bachelors.intro')}
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      {t('admissions.bachelors.description')}
+                    </p>
+                    <p className="text-muted-foreground mb-6">
+                      {t('admissions.bachelors.credits')}
+                    </p>
+                  </div>
+                  
+                  <div className="bg-primary/5 rounded-xl p-6 mb-6">
+                    <h3 className="text-xl font-semibold mb-4">{t('admissions.bachelors.requirements.title')}</h3>
+                    <ul className="space-y-3">
+                      {[1, 2, 3].map((i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span className="text-sm font-semibold text-primary">{i}</span>
+                          </div>
+                          <span className="text-muted-foreground">{t(`admissions.bachelors.requirements.item${i}`)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-muted-foreground mt-4 italic">{t('admissions.bachelors.requirements.note')}</p>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button asChild size="lg">
+                      <Link href="/services/university-admissions">
+                        {t('learnAdmissions')}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button asChild size="lg" variant="outline">
+                      <Link href="/apply">Book a Free Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Master's Degree Tab */}
+            <TabsContent value="masters">
+              <Card>
+                <CardContent className="p-8 md:p-12">
+                  <div className="prose prose-lg max-w-none mb-8">
+                    <p className="text-muted-foreground mb-4">
+                      {t('admissions.masters.intro')}
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 my-6">
+                      <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6">
+                        <h4 className="font-semibold mb-2">{t('admissions.masters.stat1.title')}</h4>
+                        <p className="text-sm text-muted-foreground">{t('admissions.masters.stat1.description')}</p>
+                      </div>
+                      <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-xl p-6">
+                        <h4 className="font-semibold mb-2">{t('admissions.masters.stat2.title')}</h4>
+                        <p className="text-sm text-muted-foreground">{t('admissions.masters.stat2.description')}</p>
+                      </div>
+                    </div>
+                    
+                    <p className="text-muted-foreground mb-6">
+                      {t('admissions.masters.excellence')}
+                    </p>
+                  </div>
+                  
+                  <div className="bg-primary/5 rounded-xl p-6 mb-6">
+                    <h3 className="text-xl font-semibold mb-4">{t('admissions.masters.requirements.title')}</h3>
+                    <ul className="space-y-3">
+                      {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span className="text-sm font-semibold text-primary">{i}</span>
+                          </div>
+                          <span className="text-muted-foreground">{t(`admissions.masters.requirements.item${i}`)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-muted-foreground mt-4 italic">{t('admissions.masters.requirements.note')}</p>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button asChild size="lg">
+                      <Link href="/services/university-admissions">
+                        {t('learnAdmissions')}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button asChild size="lg" variant="outline">
+                      <Link href="/apply">Book a Free Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Doctorate/PhD Tab */}
+            <TabsContent value="phd">
+              <Card>
+                <CardContent className="p-8 md:p-12">
+                  <div className="prose prose-lg max-w-none mb-8">
+                    <p className="text-muted-foreground mb-4">
+                      {t('admissions.phd.intro')}
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      {t('admissions.phd.research')}
+                    </p>
+                    <p className="text-muted-foreground mb-6">
+                      {t('admissions.phd.structure')}
+                    </p>
+                  </div>
+                  
+                  <div className="bg-primary/5 rounded-xl p-6 mb-6">
+                    <h3 className="text-xl font-semibold mb-4">{t('admissions.phd.requirements.title')}</h3>
+                    <ul className="space-y-3">
+                      {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <span className="text-sm font-semibold text-primary">{i}</span>
+                          </div>
+                          <span className="text-muted-foreground">{t(`admissions.phd.requirements.item${i}`)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-muted-foreground mt-4 italic">{t('admissions.phd.requirements.note')}</p>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button asChild size="lg">
+                      <Link href="/services/university-admissions">
+                        {t('learnAdmissions')}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button asChild size="lg" variant="outline">
+                      <Link href="/apply">Book a Free Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 

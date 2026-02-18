@@ -424,6 +424,66 @@
         "name": "Medicina y Salud",
         "description": "Educación médica y formación de clase mundial"
       }
+    },
+    "admissions": {
+      "title": "Admisiones Universitarias",
+      "subtitle": "Guía completa para estudiar en universidades españolas",
+      "bachelors": {
+        "title": "Grado Universitario",
+        "intro": "Los grados universitarios proporcionan a quienes los obtienen una formación integral en una disciplina específica y preparación para trabajar o continuar estudiando y acceder a un máster o doctorado.",
+        "description": "Los cursos de grado incluyen enseñanza básica y formación general en las siguientes áreas de conocimiento: Artes y Humanidades, Ciencias Sociales y Jurídicas, Ciencias de la Salud, Ingeniería y Arquitectura.",
+        "credits": "Los grados constan de 240 créditos ECTS, lo que equivale a cuatro años académicos.",
+        "requirements": {
+          "title": "Documentos requeridos para la solicitud de Grado:",
+          "item1": "Certificado o diploma de Bachillerato (SAT, IGCSE, Thanwya Amma, Tawjihi, BAC, etc.)",
+          "item2": "Registro de calificaciones de todas las asignaturas estudiadas durante los últimos tres años del período de bachillerato",
+          "item3": "Copia de pasaporte válido (válido por al menos dos años)",
+          "note": "*Nota: Estos documentos deben estar legalizados tanto por el Ministerio de Asuntos Exteriores como por el Consulado de España."
+        }
+      },
+      "masters": {
+        "title": "Máster",
+        "intro": "Si has completado tus estudios universitarios en el extranjero y quieres completar tu educación con un Máster o Posgrado, ten la seguridad de que España es el lugar perfecto para lograrlo.",
+        "stat1": {
+          "title": "Más del 20% estudiantes internacionales",
+          "description": "Estudiar un Máster en España es la decisión preferida de cientos de estudiantes extranjeros. Es en realidad una tendencia creciente. Una de las principales razones es la 'buena reputación' del sistema universitario español en estudios de Máster."
+        },
+        "stat2": {
+          "title": "Oferta creciente de titulaciones",
+          "description": "Las titulaciones ofrecidas a nivel de Máster en España han aumentado un 38% en comparación con la última década. Además, este aumento significativo se acompaña de una oferta de estudios más flexible y ágil."
+        },
+        "excellence": "Estudiar un Máster en España es un referente de excelencia en cualquier sector profesional. Estas titulaciones están principalmente enfocadas en la práctica y brindan una oportunidad única para construir relaciones y contactos valiosos a nivel laboral.",
+        "requirements": {
+          "title": "Documentos requeridos para la solicitud de Máster:",
+          "item1": "Certificado de graduación",
+          "item2": "Expediente oficial de calificaciones de todos los años de estudios universitarios",
+          "item3": "Carta de elegibilidad que aclare que el estudiante puede realizar estudios de posgrado y obtener un título de Máster de acuerdo con las leyes del país de origen del estudiante",
+          "item4": "Copia de pasaporte válido",
+          "item5": "Curriculum Vitae",
+          "item6": "Materiales adicionales que puedan mejorar la solicitud, como certificados de idiomas, cursos de formación, participación en conferencias y publicaciones de investigación científica",
+          "item7": "Carta de motivación o declaración de propósito",
+          "note": "*Nota: Los tres primeros documentos (1, 2 y 3) deben estar legalizados tanto por el Ministerio de Asuntos Exteriores como por el Consulado de España."
+        }
+      },
+      "phd": {
+        "title": "Doctorado",
+        "intro": "El Doctorado es el título universitario de más alto nivel que conduce a la obtención del título de doctor o doctora, es oficial y válido en todo el territorio nacional y está reconocido en todo el Espacio Europeo de Educación Superior.",
+        "research": "Para obtener el título de doctor es necesario demostrar la capacidad de realizar una investigación original, de forma autónoma, con un nivel de calidad reconocible internacionalmente, que debe culminar con la redacción y defensa de la tesis doctoral ante un tribunal de doctores expertos en la disciplina en la que se enmarca dicha investigación, que evaluará y determinará su suficiencia.",
+        "structure": "La formación doctoral se estructura en programas que ofrecen formación transversal y específica correspondiente a su campo, aunque la actividad esencial del doctorando será la investigación. Los programas contemplan diversas actividades formativas que el doctorando debe realizar durante su estancia en el programa.",
+        "requirements": {
+          "title": "Documentos requeridos para la solicitud de Doctorado:",
+          "item1": "Certificado de graduación",
+          "item2": "Expediente oficial de calificaciones de todos los años de estudios universitarios",
+          "item3": "Certificado de título de Máster",
+          "item4": "Expediente oficial de calificaciones del título de Máster",
+          "item5": "Declaración que certifique la elegibilidad del estudiante para realizar un doctorado en su país de origen",
+          "item6": "Copia de pasaporte válido",
+          "item7": "Curriculum Vitae",
+          "item8": "Certificados de idiomas, cursos de formación, participación en conferencias u otras actividades académicas",
+          "item9": "Propuesta de tesis doctoral para presentación a supervisores",
+          "note": "*Nota: Los cinco primeros documentos (1, 2, 3, 4 y 5) deben estar legalizados tanto por el Ministerio de Asuntos Exteriores como por el Consulado de España."
+        }
+      }
     }
   },
   "cta": {

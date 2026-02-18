@@ -6,16 +6,16 @@ import { useTranslations } from 'next-intl';
 
 const accreditedBy = [
   { name: "ICEF", src: "/logos/icef.png" },
+  { name: "Ref Checked", src: "/logos/refchecked.jpg" },
   { name: "FEDELE", src: "/logos/fedele.png" },
+  { name: "Generalitat Valenciana", src: "/logos/valencia.gif" },
+  { name: "Oficina Española", src: "/logos/rushspainspf.jpg" },
 ];
 
 const partners = [
   { name: "AI Planning Institute", src: "/logos/aiplanginstitute.png" },
   { name: "Marcas", src: "/logos/marcas.png" },
   { name: "Padoga", src: "/logos/padoga.png" },
-  { name: "Ref Checked", src: "/logos/refchecked.jpg" },
-  { name: "Rush Spain SPF", src: "/logos/rushspainspf.jpg" },
-  { name: "Valencia", src: "/logos/valencia.gif" },
 ];
 
 export function LogoCarousel() {

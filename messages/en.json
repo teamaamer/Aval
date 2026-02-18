@@ -783,6 +783,66 @@
         "name": "Medicine & Health",
         "description": "World-class medical education and training"
       }
+    },
+    "admissions": {
+      "title": "University Admissions",
+      "subtitle": "Comprehensive guide to studying at Spanish universities",
+      "bachelors": {
+        "title": "Bachelor's Degree",
+        "intro": "University Bachelor's degrees provide those who obtain them with comprehensive training in a specific discipline and preparation to work or continue studying and gain access to a master's or doctorate.",
+        "description": "Undergraduate courses include basic teaching and general training in the following areas of knowledge: Arts and Humanities, Social Sciences and Law, Health Sciences, Engineering and Architecture.",
+        "credits": "The degrees consist of 240 ECTS credits, which is equivalent to four academic years.",
+        "requirements": {
+          "title": "Required Documents for Bachelor's Degree Application:",
+          "item1": "A High School Certificate or diploma (SAT, IGCSE, Thanwya Amma, Tawjihi, BAC, etc.)",
+          "item2": "A record of grades for all subjects studied during the last three years of high school period",
+          "item3": "A copy of a valid passport (valid for at least two years)",
+          "note": "*Note: These documents must be legalized from both the Ministry of Foreign Affairs and the Spanish Consulate."
+        }
+      },
+      "masters": {
+        "title": "Master's Degree",
+        "intro": "If you have completed your university studies abroad and want to complete your education with a Master's or Postgraduate, rest assured that Spain is the perfect place to achieve it.",
+        "stat1": {
+          "title": "More than 20% international students",
+          "description": "Studying a Master in Spain is the preferred decision for hundreds of foreign students. It is actually a growing trend. One of the main reasons is the 'good reputation' of the Spanish university system in Master's studies."
+        },
+        "stat2": {
+          "title": "Growing supply of degrees",
+          "description": "The degrees offered at the Master's level in Spain have increased by 38% compared to the last decade. In addition, this significant increase is accompanied by a more flexible and agile study offer."
+        },
+        "excellence": "Studying a Master in Spain is a benchmark of excellence in any professional sector. These qualifications are mainly focused on practice and provide a unique opportunity to build valuable relationships and contacts at the work level.",
+        "requirements": {
+          "title": "Required Documents for Master's Degree Application:",
+          "item1": "A graduation certificate",
+          "item2": "An official transcript of grades for all years of university study",
+          "item3": "An Eligibility letter clarifying that the student is able to pursue postgraduate studies and obtain a Master's Degree in accordance with the laws of the student's home country",
+          "item4": "A copy of a valid passport",
+          "item5": "Curriculum Vitae (CV)",
+          "item6": "Additional materials that may enhance the application, such as language certificates, training courses, conference participation, and scientific research publications",
+          "item7": "Motivation letter or statement of purpose",
+          "note": "*Note: The first three documents (1, 2, and 3) must be legalized from both the Ministry of Foreign Affairs and the Spanish Consulate."
+        }
+      },
+      "phd": {
+        "title": "Doctorate / PhD Degree",
+        "intro": "The Doctorate is the highest university degree that leads to obtaining the title of doctor, it is official and valid throughout the national territory and is recognized throughout the European Higher Education Area.",
+        "research": "In order to obtain the doctoral degree, it is necessary to demonstrate the ability to carry out original research, autonomously, with an internationally recognizable level of quality, which must culminate in the writing and defense of the doctoral thesis before a panel of expert doctors in the discipline in which said investigation is framed, which will evaluate and determine its sufficiency.",
+        "structure": "Doctoral training is structured into programs that offer transversal and specific training corresponding to their field, although the essential activity of the doctoral candidate will be research. The programs contemplate various training activities that the doctoral student must carry out during their stay in the program.",
+        "requirements": {
+          "title": "Required Documents for PhD Degree Application:",
+          "item1": "A graduation certificate",
+          "item2": "An official transcript of grades for all years of university study",
+          "item3": "A Master's degree certificate",
+          "item4": "An official transcript of grades for the Master's degree",
+          "item5": "A statement certifying the student's eligibility to pursue a doctoral degree in their home country",
+          "item6": "A copy of a valid passport",
+          "item7": "Curriculum Vitae (CV)",
+          "item8": "Language certificates, training courses, conference participation, or other academic pursuits",
+          "item9": "A doctoral thesis proposal for presentation to supervisors",
+          "note": "*Note: The first five documents (1, 2, 3, 4 and 5) must be legalized from both the Ministry of Foreign Affairs and the Spanish Consulate."
+        }
+      }
     }
   },
   "cta": {

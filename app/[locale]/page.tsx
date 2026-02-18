@@ -78,8 +78,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <LogoCarousel />
-
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <SectionHeading
@@ -278,6 +276,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <LogoCarousel />
 
       <WhatsAppButton />
     </>
