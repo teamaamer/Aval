@@ -420,7 +420,7 @@ export default function HomePage() {
               <Card className="mb-6">
                 <CardContent className="p-0">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.4837537384773!2d-6.2584!3d31.9454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Morocco!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.8267842842845!2d-0.3799399!3d39.4844444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f1b8c8d8c8d%3A0x1234567890abcdef!2sAvinguda%20del%20Cardenal%20Benlloch%2C%2093%2C%2046021%20Val%C3%A8ncia%2C%20Valencia%2C%20Spain!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
