@@ -139,7 +139,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
 export const NavbarLogo = () => {
   return (
     <Link href="/" className="flex items-center gap-2 group relative z-10 flex-shrink-0 min-w-fit">
-      <div className="relative h-12 lg:h-14 w-12 lg:w-14 bg-white rounded-full p-1">
+      <div className="relative h-16 lg:h-20 w-16 lg:w-20 bg-white rounded-full p-1">
         <img 
           src="/aval logo.png" 
           alt="Aval Logo" 

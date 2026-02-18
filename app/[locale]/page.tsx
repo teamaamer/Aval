@@ -201,30 +201,6 @@ export default function HomePage() {
 
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <Card className="bg-gradient-to-br from-primary/5 to-primary/10">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">{t('visionMission.vision.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('visionMission.vision.description')}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-secondary/5 to-secondary/10">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">{t('visionMission.mission.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('visionMission.mission.description')}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <SectionHeading
               title={t('faq.title')}
