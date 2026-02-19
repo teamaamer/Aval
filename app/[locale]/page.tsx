@@ -15,6 +15,7 @@ import { WaveBackground } from "@/components/wave-background";
 import { LogoCarousel } from "@/components/logo-carousel";
 import { ContactForm } from "@/components/contact-form";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { TestimonialsCarousel } from "@/components/testimonials-carousel";
 import { services, getServicesByCategory } from "@/content/services";
 import { stats, howItWorks, testimonials, faqs, siteConfig } from "@/content/site";
 
@@ -110,20 +111,11 @@ export default function HomePage() {
             centered
             className="mb-12"
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[0, 1, 2].map((index) => (
-              <TestimonialCard
-                key={index}
-                name={t(`testimonials.items.${index}.name`)}
-                country=""
-                program=""
-                text={t(`testimonials.items.${index}.text`)}
-                rating={5}
-                index={index}
-                image={index === 1 ? "https://lh3.googleusercontent.com/a-/ALV-UjV6GcE05CGcHIGs0E1QHRkUtUKhLstpwJ8VUn-mLF2QtT2JE-GA=w58-h58-p-rp-mo-br100" : index === 2 ? "https://lh3.googleusercontent.com/a-/ALV-UjVmi9xAx-Ry1IvaLJQ312msC8A28ATFtGeyr42JFHdu2XRJw4nU=w58-h58-p-rp-mo-br100" : undefined}
-              />
-            ))}
-          </div>
+          <TestimonialsCarousel testimonials={testimonials.map((testimonial, index) => ({
+            ...testimonial,
+            name: t(`testimonials.items.${index}.name`),
+            text: t(`testimonials.items.${index}.text`),
+          }))} />
         </div>
       </section>
 

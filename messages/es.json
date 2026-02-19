@@ -60,7 +60,7 @@
   },
   "testimonials": {
     "title": "Reseñas",
-    "subtitle": "Experiencias reales de estudiantes que hemos ayudado",
+    "subtitle": "Experiencias reales de estudiantes",
     "items": [
       {
         "name": "Shatha Arafat",
@@ -73,6 +73,62 @@
       {
         "name": "Qais Hammouri",
         "text": "Una experiencia absolutamente maravillosa tratando con AVAL. Todo salió sin problemas y fácilmente, ya que me ayudaron a asegurar una admisión de doctorado en una de las prestigiosas universidades de España. Agradezco al equipo de AVAL por su cooperación, amabilidad, profesionalismo y puntualidad."
+      },
+      {
+        "name": "Bara Fetyan",
+        "text": "¡Mi experiencia con AVAL Student Services fue excelente! El equipo es profesional, servicial y siempre está listo para ayudar. Me guiaron en cada paso del proceso de estudio y viaje de manera fluida y eficiente. Excelente comunicación y servicio confiable. ¡Realmente los recomiendo a cualquier estudiante. Gracias por su gran apoyo! 👏"
+      },
+      {
+        "name": "Maryam Samara",
+        "text": "Fue una experiencia extraordinaria con los servicios estudiantiles de AVAL, marcada por completa honestidad y transparencia. Son muy amables y eficientes, y estuvieron en contacto conmigo durante todo el proceso de admisión, de la A a la Z. Estoy muy feliz ahora porque el equipo de la oficina de AVAL fue la razón principal por la que obtuve mi admisión de doctorado en la Universidad UPV. Muchas gracias, equipo Aval."
+      },
+      {
+        "name": "Ahmad Najm Abd",
+        "text": "¡Solo unas palabras para decir! Agradezco profundamente al equipo de AVAL Student Services por su continuo apoyo, orientación y dedicación. De hecho, su asistencia ha marcado una diferencia significativa, ¡y estoy verdaderamente agradecido por su apoyo y ayuda!"
+      },
+      {
+        "name": "Rami Sh",
+        "text": "Aval me ayudó en cada detalle, desde la solicitud de visa y los documentos requeridos hasta que comencé mi viaje en España. Dan consejos, asesoramiento y siempre dan la bienvenida a las preguntas de sus clientes."
+      },
+      {
+        "name": "Esraa Hyarat",
+        "text": "Los mejores para siempre. Puedes obtener tu aceptación fácilmente. Te apoyarán en cada paso del camino. Recibí mi aceptación fácilmente, y continúan ayudándome respondiendo mis mensajes cuando necesito asistencia. Te tratan como a un amigo o familiar."
+      },
+      {
+        "name": "Alaa Al-junidy",
+        "text": "Excelente y muy rápido servicio. El equipo es servicial, profesional y me guió en cada paso académico. Altamente recomendado para cualquier estudiante que necesite apoyo con los procedimientos universitarios. ¡Gracias!"
+      },
+      {
+        "name": "Basel Alamleh",
+        "text": "Fue una experiencia maravillosa. El equipo fue muy servicial, profesional y solidario. Lo recomiendo encarecidamente."
+      },
+      {
+        "name": "Sana Quraan",
+        "text": "Obtuve mi visa en 14 días, me ayudaron mucho en todo"
+      },
+      {
+        "name": "Ali Subuh",
+        "text": "Fue una experiencia grandiosa y maravillosa, el equipo fue muy profesional y servicial"
+      },
+      {
+        "name": "Ali Masri",
+        "text": "Lo recomiendo encarecidamente, fácil de tratar y ahorra mucho tiempo y esfuerzo. Gracias por su servicio."
+      },
+      {
+        "name": "Hamza Hamdan",
+        "text": "La mejor experiencia que he tenido. La mejor oficina para estudiantes"
+      },
+      {
+        "name": "Ahmad Althnabet",
+        "text": "Una empresa excelente y pionera que siempre aplasta lo mejor."
+      },
+      {
+        "name": "Yasmin Hamed",
+        "text": "Son muy profesionales."
+      },
+      {
+        "name": "Diaa Wirdian",
+        "text": "Muchísimas gracias a AVAL y a Firas por ayudarme a venir a España, a inscribirme en el instituto de español y también en el doctorado. Son súper amables y de verdad son totalmente de confianza. Recomendados!"
       }
     ]
   },
