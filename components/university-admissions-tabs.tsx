@@ -13,18 +13,41 @@ export function UniversityAdmissionsTabs() {
 
   return (
     <Tabs defaultValue={tab} className="w-full mb-12">
-      <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-3 mb-8 h-auto p-2">
-        <TabsTrigger value="bachelors" className="flex items-center gap-2 py-3 px-6 text-base">
-          <GraduationCap className="h-5 w-5" />
-          {tUniv('admissions.bachelors.title')}
+      <TabsList className="grid md:grid-cols-3 gap-8 mb-10 max-w-6xl mx-auto h-auto bg-transparent p-0 w-full">
+        <TabsTrigger value="bachelors" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-red-600 data-[state=active]:to-red-500 data-[state=active]:border-red-600 data-[state=active]:[&_h3]:!text-black dark:data-[state=active]:[&_h3]:!text-white data-[state=active]:[&_p]:!text-black dark:data-[state=active]:[&_p]:!text-white hover:shadow-2xl transition-all hover:scale-105 cursor-pointer h-full border-2 rounded-2xl p-0">
+          <Card className="border-0 shadow-none bg-transparent">
+            <CardContent className="pt-12 pb-10 px-8">
+              <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-6">
+                <GraduationCap className="h-14 w-14 text-red-600" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">{tUniv('admissions.bachelors.title')}</h3>
+              <p className="text-lg text-muted-foreground">4 years • 240 ECTS credits</p>
+            </CardContent>
+          </Card>
         </TabsTrigger>
-        <TabsTrigger value="masters" className="flex items-center gap-2 py-3 px-6 text-base">
-          <BookOpen className="h-5 w-5" />
-          {tUniv('admissions.masters.title')}
+        
+        <TabsTrigger value="masters" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-red-600 data-[state=active]:to-red-500 data-[state=active]:border-red-600 data-[state=active]:[&_h3]:!text-black dark:data-[state=active]:[&_h3]:!text-white data-[state=active]:[&_p]:!text-black dark:data-[state=active]:[&_p]:!text-white hover:shadow-2xl transition-all hover:scale-105 cursor-pointer h-full border-2 rounded-2xl p-0">
+          <Card className="border-0 shadow-none bg-transparent">
+            <CardContent className="pt-12 pb-10 px-8">
+              <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-6">
+                <BookOpen className="h-14 w-14 text-red-600" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">{tUniv('admissions.masters.title')}</h3>
+              <p className="text-lg text-muted-foreground">1-2 years • Advanced specialization</p>
+            </CardContent>
+          </Card>
         </TabsTrigger>
-        <TabsTrigger value="phd" className="flex items-center gap-2 py-3 px-6 text-base">
-          <Award className="h-5 w-5" />
-          {tUniv('admissions.phd.title')}
+        
+        <TabsTrigger value="phd" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-red-600 data-[state=active]:to-red-500 data-[state=active]:border-red-600 data-[state=active]:[&_h3]:!text-black dark:data-[state=active]:[&_h3]:!text-white data-[state=active]:[&_p]:!text-black dark:data-[state=active]:[&_p]:!text-white hover:shadow-2xl transition-all hover:scale-105 cursor-pointer h-full border-2 rounded-2xl p-0">
+          <Card className="border-0 shadow-none bg-transparent">
+            <CardContent className="pt-12 pb-10 px-8">
+              <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-6">
+                <Award className="h-14 w-14 text-red-600" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">{tUniv('admissions.phd.title')}</h3>
+              <p className="text-lg text-muted-foreground">3-4 years • Research & thesis</p>
+            </CardContent>
+          </Card>
         </TabsTrigger>
       </TabsList>
 

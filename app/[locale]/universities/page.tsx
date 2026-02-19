@@ -27,42 +27,42 @@ export default async function UniversitiesPage() {
             centered
           />
           
-          <div className="max-w-4xl mx-auto text-center mt-16">
-            <p className="text-xl text-muted-foreground mb-8">{t('admissions.subtitle')}</p>
+          <div className="max-w-6xl mx-auto text-center mt-16">
+            <p className="text-2xl md:text-3xl text-muted-foreground mb-12">{t('admissions.subtitle')}</p>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-8">
               <Link href="/services/university-admissions?tab=bachelors" className="block">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
-                      <GraduationCap className="h-8 w-8 text-red-600" />
+                <Card className="hover:shadow-2xl transition-all hover:scale-105 cursor-pointer h-full border-2">
+                  <CardContent className="pt-12 pb-10 px-8">
+                    <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-6">
+                      <GraduationCap className="h-14 w-14 text-red-600" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{t('admissions.bachelors.title')}</h3>
-                    <p className="text-sm text-muted-foreground">4 years • 240 ECTS credits</p>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">{t('admissions.bachelors.title')}</h3>
+                    <p className="text-lg text-muted-foreground">4 years • 240 ECTS credits</p>
                   </CardContent>
                 </Card>
               </Link>
               
               <Link href="/services/university-admissions?tab=masters" className="block">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
-                      <BookOpen className="h-8 w-8 text-red-600" />
+                <Card className="hover:shadow-2xl transition-all hover:scale-105 cursor-pointer h-full border-2">
+                  <CardContent className="pt-12 pb-10 px-8">
+                    <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-6">
+                      <BookOpen className="h-14 w-14 text-red-600" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{t('admissions.masters.title')}</h3>
-                    <p className="text-sm text-muted-foreground">1-2 years • Advanced specialization</p>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">{t('admissions.masters.title')}</h3>
+                    <p className="text-lg text-muted-foreground">1-2 years • Advanced specialization</p>
                   </CardContent>
                 </Card>
               </Link>
               
               <Link href="/services/university-admissions?tab=phd" className="block">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
-                      <Award className="h-8 w-8 text-red-600" />
+                <Card className="hover:shadow-2xl transition-all hover:scale-105 cursor-pointer h-full border-2">
+                  <CardContent className="pt-12 pb-10 px-8">
+                    <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-6">
+                      <Award className="h-14 w-14 text-red-600" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{t('admissions.phd.title')}</h3>
-                    <p className="text-sm text-muted-foreground">3-4 years • Research & thesis</p>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">{t('admissions.phd.title')}</h3>
+                    <p className="text-lg text-muted-foreground">3-4 years • Research & thesis</p>
                   </CardContent>
                 </Card>
               </Link>
