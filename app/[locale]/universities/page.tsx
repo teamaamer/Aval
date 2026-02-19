@@ -26,6 +26,48 @@ export default async function UniversitiesPage() {
             subtitle={t('subtitle')}
             centered
           />
+          
+          <div className="max-w-4xl mx-auto text-center mt-16">
+            <p className="text-xl text-muted-foreground mb-8">{t('admissions.subtitle')}</p>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/services/university-admissions?tab=bachelors" className="block">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-8 pb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
+                      <GraduationCap className="h-8 w-8 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{t('admissions.bachelors.title')}</h3>
+                    <p className="text-sm text-muted-foreground">4 years • 240 ECTS credits</p>
+                  </CardContent>
+                </Card>
+              </Link>
+              
+              <Link href="/services/university-admissions?tab=masters" className="block">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-8 pb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
+                      <BookOpen className="h-8 w-8 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{t('admissions.masters.title')}</h3>
+                    <p className="text-sm text-muted-foreground">1-2 years • Advanced specialization</p>
+                  </CardContent>
+                </Card>
+              </Link>
+              
+              <Link href="/services/university-admissions?tab=phd" className="block">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-8 pb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
+                      <Award className="h-8 w-8 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{t('admissions.phd.title')}</h3>
+                    <p className="text-sm text-muted-foreground">3-4 years • Research & thesis</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -153,47 +195,6 @@ export default async function UniversitiesPage() {
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('admissions.title')}</h2>
-            <p className="text-xl text-muted-foreground mb-8">{t('admissions.subtitle')}</p>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-10">
-              <Link href="/services/university-admissions?tab=bachelors" className="block">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
-                      <GraduationCap className="h-8 w-8 text-red-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{t('admissions.bachelors.title')}</h3>
-                    <p className="text-sm text-muted-foreground">4 years • 240 ECTS credits</p>
-                  </CardContent>
-                </Card>
-              </Link>
-              
-              <Link href="/services/university-admissions?tab=masters" className="block">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
-                      <BookOpen className="h-8 w-8 text-red-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{t('admissions.masters.title')}</h3>
-                    <p className="text-sm text-muted-foreground">1-2 years • Advanced specialization</p>
-                  </CardContent>
-                </Card>
-              </Link>
-              
-              <Link href="/services/university-admissions?tab=phd" className="block">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
-                      <Award className="h-8 w-8 text-red-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{t('admissions.phd.title')}</h3>
-                    <p className="text-sm text-muted-foreground">3-4 years • Research & thesis</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            </div>
-
             <Card className="bg-secondary/20 dark:bg-secondary/10 border-2 border-secondary/30 dark:border-secondary/20">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">{t('admissions.ctaTitle')}</h3>
