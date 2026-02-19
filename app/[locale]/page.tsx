@@ -260,7 +260,7 @@ export default function HomePage() {
                 <p className="text-sm text-muted-foreground mb-4">
                   {t('contact.inPersonDesc')}
                 </p>
-                <Button asChild>
+                <Button asChild className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white">
                   <Link href="/apply">{t('contact.bookConsultation')}</Link>
                 </Button>
               </div>

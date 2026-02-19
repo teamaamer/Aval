@@ -98,9 +98,9 @@ export default function TermsPage() {
               For questions about these Terms of Service, please contact us at:
             </p>
             <p>
-              Email: info@avalstudentservices.com
+              Email: info@avalservices.es
               <br />
-              Phone: +34 123 456 789
+              Phone: +34 674 597 589
             </p>
           </div>
         </div>

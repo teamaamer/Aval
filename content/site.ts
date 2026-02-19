@@ -3,15 +3,13 @@ export const siteConfig = {
   description: "A group of experienced, dedicated professionals committed to provide the best solution for students from all the world seeking educational institutions and allowing them to study in universities in Spain.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://avalstudentservices.com",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+34674597589",
-  email: "info@avalstudentservices.com",
+  email: "info@avalservices.es",
   phone: "+34 674 597 589",
   address: "Avinguda del Cardenal Benlloch, 93, bajo, El Llano del Real, 46021 València, Valencia, Spain",
   hours: "Monday - Friday: 9:00 AM - 6:00 PM",
   social: {
-    facebook: "https://facebook.com/avalstudentservices",
+    facebook: "https://www.facebook.com/avalstudentservices.spain",
     instagram: "https://instagram.com/avalstudentservices",
-    twitter: "https://twitter.com/avalstudent",
-    linkedin: "https://linkedin.com/company/avalstudentservices",
   },
 };
 

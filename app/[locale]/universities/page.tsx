@@ -177,7 +177,7 @@ export default async function UniversitiesPage() {
                   {t('needHelpDesc')}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg">
+                  <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white">
                     <Link href="/apply">Book a Free Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline">

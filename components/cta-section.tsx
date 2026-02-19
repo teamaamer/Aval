@@ -37,7 +37,7 @@ export function CTASection({
             <p className="text-lg text-muted-foreground mb-8">{description}</p>
           )}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white">
               <Link href={primaryButtonHref}>
                 {primaryButtonText}
                 <ArrowRight className="ml-2 h-5 w-5" />
