@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { trackEvent } from "@/lib/analytics";
+import { initEmailJS, sendContactEmails } from "@/lib/emailjs";
 import { Loader2 } from "lucide-react";
 
 type ContactFormData = {
@@ -31,6 +32,11 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
+  // Initialize EmailJS on component mount
+  useEffect(() => {
+    initEmailJS();
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -45,19 +51,12 @@ export function ContactForm() {
     setSubmitStatus("idle");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        setSubmitStatus("success");
-        trackEvent("contact_form_submitted", { source: "contact_page" });
-        reset();
-      } else {
-        setSubmitStatus("error");
-      }
+      // Send emails using EmailJS (to both admin and user)
+      await sendContactEmails(data);
+      
+      setSubmitStatus("success");
+      trackEvent("contact_form_submitted", { source: "contact_page" });
+      reset();
     } catch (error) {
       console.error("Form submission error:", error);
       setSubmitStatus("error");

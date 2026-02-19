@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received - Welcome to Aval!</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5;">
+        <tr>
+            <td style="padding: 40px 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 50px 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                            <div style="background-color: #ffffff; width: 90px; height: 90px; border-radius: 50%; margin: 0 auto 20px; display: inline-block; line-height: 90px; font-size: 45px;">
+                                🎉
+                            </div>
+                            <h1 style="margin: 0; color: #ffffff; font-size: 32px; font-weight: 700; letter-spacing: -0.5px;">
+                                Application Received!
+                            </h1>
+                            <p style="margin: 12px 0 0 0; color: #ffffff; font-size: 17px; opacity: 0.95;">
+                                Welcome to Your Spanish Education Journey
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <p style="margin: 0 0 8px 0; color: #374151; font-size: 20px; font-weight: 600;">
+                                Hello {{to_name}},
+                            </p>
+                            <p style="margin: 0 0 24px 0; color: #6b7280; font-size: 16px; line-height: 26px;">
+                                Thank you for submitting your application to study in Spain! We're thrilled to be part of your academic journey and look forward to helping you achieve your educational goals.
+                            </p>
+                            
+                            <!-- Success Banner -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-radius: 8px; border-left: 4px solid #10b981; margin-bottom: 32px;">
+                                <tr>
+                                    <td style="padding: 24px;">
+                                        <p style="margin: 0 0 8px 0; color: #065f46; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            ✓ Application Successfully Submitted
+                                        </p>
+                                        <p style="margin: 0; color: #047857; font-size: 15px; line-height: 22px;">
+                                            Your application has been received and is now being reviewed by our admissions team. You should hear back from us within <strong>2-3 business days</strong>.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Application Summary -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 32px;">
+                                <tr>
+                                    <td style="padding-bottom: 16px;">
+                                        <p style="margin: 0; color: #374151; font-size: 18px; font-weight: 700;">
+                                            📋 Your Application Summary
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #f9fafb; padding: 24px; border-radius: 8px; border: 1px solid #e5e7eb;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 10px 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td width="40%" style="vertical-align: top;">
+                                                                <p style="margin: 0; color: #6b7280; font-size: 14px; font-weight: 600;">Program:</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 600;">{{desired_program}}</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 10px 0; border-top: 1px solid #e5e7eb;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td width="40%" style="vertical-align: top;">
+                                                                <p style="margin: 0; color: #6b7280; font-size: 14px; font-weight: 600;">Study Level:</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 600;">{{study_level}}</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 10px 0; border-top: 1px solid #e5e7eb;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td width="40%" style="vertical-align: top;">
+                                                                <p style="margin: 0; color: #6b7280; font-size: 14px; font-weight: 600;">Intake Period:</p>
+                                                            </td>
+                                                            <td>
+                                                                <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 600;">{{intake}}</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Next Steps -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 32px;">
+                                <tr>
+                                    <td style="padding-bottom: 16px;">
+                                        <p style="margin: 0; color: #374151; font-size: 18px; font-weight: 700;">
+                                            🚀 What Happens Next?
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- Step 1 -->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 16px;">
+                                            <tr>
+                                                <td width="50" style="vertical-align: top;">
+                                                    <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); width: 36px; height: 36px; border-radius: 50%; text-align: center; line-height: 36px; color: #ffffff; font-weight: 700; font-size: 16px;">1</div>
+                                                </td>
+                                                <td style="vertical-align: top; padding-left: 12px;">
+                                                    <p style="margin: 0 0 4px 0; color: #111827; font-size: 15px; font-weight: 600;">Application Review</p>
+                                                    <p style="margin: 0; color: #6b7280; font-size: 14px; line-height: 20px;">Our admissions team will carefully review your application within 2-3 business days.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                        <!-- Step 2 -->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 16px;">
+                                            <tr>
+                                                <td width="50" style="vertical-align: top;">
+                                                    <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); width: 36px; height: 36px; border-radius: 50%; text-align: center; line-height: 36px; color: #ffffff; font-weight: 700; font-size: 16px;">2</div>
+                                                </td>
+                                                <td style="vertical-align: top; padding-left: 12px;">
+                                                    <p style="margin: 0 0 4px 0; color: #111827; font-size: 15px; font-weight: 600;">Document Requirements</p>
+                                                    <p style="margin: 0; color: #6b7280; font-size: 14px; line-height: 20px;">You'll receive an email with a detailed list of required documents and next steps.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                        <!-- Step 3 -->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td width="50" style="vertical-align: top;">
+                                                    <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); width: 36px; height: 36px; border-radius: 50%; text-align: center; line-height: 36px; color: #ffffff; font-weight: 700; font-size: 16px;">3</div>
+                                                </td>
+                                                <td style="vertical-align: top; padding-left: 12px;">
+                                                    <p style="margin: 0 0 4px 0; color: #111827; font-size: 15px; font-weight: 600;">Consultation Call</p>
+                                                    <p style="margin: 0; color: #6b7280; font-size: 14px; line-height: 20px;">We'll schedule a personalized consultation to discuss your study plans and answer any questions.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Contact Info -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 8px; padding: 24px; margin-bottom: 32px;">
+                                <tr>
+                                    <td>
+                                        <p style="margin: 0 0 16px 0; color: #1e40af; font-size: 15px; font-weight: 700;">
+                                            📞 Need Help or Have Questions?
+                                        </p>
+                                        <p style="margin: 0 0 12px 0; color: #1e3a8a; font-size: 14px; line-height: 20px;">
+                                            📧 <strong>Email:</strong> <a href="mailto:info@avalservices.es" style="color: #dc2626; text-decoration: none; font-weight: 600;">info@avalservices.es</a>
+                                        </p>
+                                        <p style="margin: 0; color: #1e3a8a; font-size: 14px; line-height: 20px;">
+                                            💬 <strong>WhatsApp:</strong> Available on our website
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- CTA Button -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="text-align: center; padding: 10px 0;">
+                                        <a href="https://avalservices.es" style="display: inline-block; background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: #ffffff; text-decoration: none; padding: 16px 40px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(220, 38, 38, 0.2);">
+                                            Visit Our Website
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 30px; background-color: #f9fafb; border-radius: 0 0 8px 8px; border-top: 1px solid #e5e7eb;">
+                            <p style="margin: 0 0 12px 0; color: #374151; font-size: 15px; text-align: center; font-weight: 600;">
+                                Aval - Your Gateway to Spanish Education
+                            </p>
+                            <p style="margin: 0; color: #9ca3af; font-size: 13px; text-align: center; line-height: 20px;">
+                                This is an automated confirmation email.<br>
+                                Please do not reply to this email. For inquiries, contact us at info@avalservices.es
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

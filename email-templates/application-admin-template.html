@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Application</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5;">
+        <tr>
+            <td style="padding: 40px 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); padding: 40px 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                            <div style="background-color: #ffffff; width: 70px; height: 70px; border-radius: 50%; margin: 0 auto 16px; display: inline-block; line-height: 70px; font-size: 35px;">
+                                🎓
+                            </div>
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
+                                New Student Application
+                            </h1>
+                            <p style="margin: 8px 0 0 0; color: #ffffff; font-size: 15px; opacity: 0.95;">
+                                Application received from {{applicant_name}}
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <p style="margin: 0 0 24px 0; color: #374151; font-size: 16px; line-height: 24px;">
+                                Hello Admin,
+                            </p>
+                            <p style="margin: 0 0 32px 0; color: #6b7280; font-size: 15px; line-height: 22px;">
+                                A new student application has been submitted through your website. Please review the details below.
+                            </p>
+                            
+                            <!-- Personal Information Section -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 24px;">
+                                <tr>
+                                    <td style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 12px 20px; border-radius: 6px 6px 0 0; border-left: 4px solid #f59e0b;">
+                                        <p style="margin: 0; color: #92400e; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            👤 Personal Information
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #fffbeb; padding: 24px 20px; border-radius: 0 0 6px 6px; border: 1px solid #fde68a; border-top: none;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #78350f; font-size: 13px; font-weight: 600;">Full Name:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <p style="margin: 0; color: #1f2937; font-size: 15px; font-weight: 600;">{{applicant_name}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #78350f; font-size: 13px; font-weight: 600;">Email:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <a href="mailto:{{applicant_email}}" style="margin: 0; color: #7c3aed; font-size: 15px; font-weight: 600; text-decoration: none;">{{applicant_email}}</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #78350f; font-size: 13px; font-weight: 600;">Phone:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <p style="margin: 0; color: #1f2937; font-size: 15px; font-weight: 600;">{{applicant_phone}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #78350f; font-size: 13px; font-weight: 600;">Nationality:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <p style="margin: 0; color: #1f2937; font-size: 15px; font-weight: 600;">{{nationality}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Study Details Section -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 24px;">
+                                <tr>
+                                    <td style="background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%); padding: 12px 20px; border-radius: 6px 6px 0 0; border-left: 4px solid #7c3aed;">
+                                        <p style="margin: 0; color: #5b21b6; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            📚 Study Details
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #f5f3ff; padding: 24px 20px; border-radius: 0 0 6px 6px; border: 1px solid #c4b5fd; border-top: none;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #5b21b6; font-size: 13px; font-weight: 600;">Desired Program:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <p style="margin: 0; color: #1f2937; font-size: 15px; font-weight: 600;">{{desired_program}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #5b21b6; font-size: 13px; font-weight: 600;">Study Level:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <p style="margin: 0; color: #1f2937; font-size: 15px; font-weight: 600;">{{study_level}}</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="35%" style="padding: 8px 0; vertical-align: top;">
+                                                    <p style="margin: 0; color: #5b21b6; font-size: 13px; font-weight: 600;">Intake Period:</p>
+                                                </td>
+                                                <td style="padding: 8px 0;">
+                                                    <p style="margin: 0; color: #1f2937; font-size: 15px; font-weight: 600;">{{intake}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Services Needed Section -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 24px;">
+                                <tr>
+                                    <td style="background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%); padding: 12px 20px; border-radius: 6px 6px 0 0; border-left: 4px solid #3b82f6;">
+                                        <p style="margin: 0; color: #1e3a8a; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            ✨ Services Requested
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #eff6ff; padding: 20px; border-radius: 0 0 6px 6px; border: 1px solid #93c5fd; border-top: none;">
+                                        <p style="margin: 0; color: #1e3a8a; font-size: 15px; line-height: 24px; font-weight: 500;">{{services_needed}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Additional Information Section -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 32px;">
+                                <tr>
+                                    <td style="background-color: #f9fafb; padding: 12px 20px; border-radius: 6px 6px 0 0; border-left: 4px solid #6b7280;">
+                                        <p style="margin: 0; color: #374151; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            📝 Additional Information
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #ffffff; padding: 20px; border-radius: 0 0 6px 6px; border: 1px solid #e5e7eb; border-top: none;">
+                                        <p style="margin: 0; color: #4b5563; font-size: 15px; line-height: 24px; white-space: pre-wrap;">{{additional_info}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Action Buttons -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="text-align: center; padding: 10px;">
+                                        <a href="mailto:{{applicant_email}}" style="display: inline-block; background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); color: #ffffff; text-decoration: none; padding: 14px 32px; border-radius: 6px; font-weight: 600; font-size: 15px; margin: 0 8px;">
+                                            📧 Contact Applicant
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 30px; background-color: #f9fafb; border-radius: 0 0 8px 8px; border-top: 1px solid #e5e7eb;">
+                            <p style="margin: 0; color: #9ca3af; font-size: 13px; text-align: center; line-height: 20px;">
+                                This is an automated notification from your Aval website application form.<br>
+                                Application received on {{current_date}}
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

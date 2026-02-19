@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -14,6 +14,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { CheckCircle2, Loader2 } from "lucide-react";
 import { services } from "@/content/services";
 import { trackEvent } from "@/lib/analytics";
+import { initEmailJS, sendApplicationEmails } from "@/lib/emailjs";
 import { NationalitySelect } from "@/components/nationality-select";
 
 const stepSchemas = [
@@ -51,6 +52,11 @@ export default function ApplyPage() {
   const [formData, setFormData] = useState<Partial<FormData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  // Initialize EmailJS on component mount
+  useEffect(() => {
+    initEmailJS();
+  }, []);
 
   const {
     register,
@@ -90,16 +96,11 @@ export default function ApplyPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/apply", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(finalData),
-      });
-
-      if (response.ok) {
-        setIsSuccess(true);
-        trackEvent("application_submitted", { services: finalData.servicesNeeded });
-      }
+      // Send emails using EmailJS (to both admin and user)
+      await sendApplicationEmails(finalData as any);
+      
+      setIsSuccess(true);
+      trackEvent("application_submitted", { services: finalData.servicesNeeded });
     } catch (error) {
       console.error("Submission error:", error);
     } finally {
