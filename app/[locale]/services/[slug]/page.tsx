@@ -2,13 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from 'next-intl/server';
-import { ArrowLeft, CheckCircle2, ArrowRight } from "lucide-react";
+import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Timeline } from "@/components/timeline";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { ContactForm } from "@/components/contact-form";
+import { UniversityAdmissionsTabs } from "@/components/university-admissions-tabs";
 import { getIconComponent } from "@/lib/icon-mapper";
 import { services, getServiceBySlug } from "@/content/services";
 
@@ -29,7 +29,6 @@ export default async function ServiceDetailPage({
   params: Promise<{ slug: string; locale: string }>;
 }) {
   const t = await getTranslations('services');
-  const tUniv = await getTranslations('universities');
   const { slug, locale } = await params;
   const service = getServiceBySlug(slug);
 
@@ -84,74 +83,8 @@ export default async function ServiceDetailPage({
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          {slug === 'university-admissions' && (
-            <div className="mb-12">
-              <Card className="bg-gradient-to-br from-primary/5 to-secondary/5">
-                <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2">{tUniv('admissions.title')}</h3>
-                      <p className="text-sm text-muted-foreground">{tUniv('admissions.subtitle')}</p>
-                    </div>
-                    <Button asChild variant="outline">
-                      <Link href={`/${locale}/universities#admissions`}>
-                        View Detailed Requirements
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          )}
-
           {slug === 'university-admissions' ? (
-            <Tabs defaultValue="bachelors" className="w-full mb-12">
-              <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-8">
-                <TabsTrigger value="bachelors">{tUniv('admissions.bachelors.title')}</TabsTrigger>
-                <TabsTrigger value="masters">{tUniv('admissions.masters.title')}</TabsTrigger>
-                <TabsTrigger value="phd">{tUniv('admissions.phd.title')}</TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="bachelors">
-                <Card>
-                  <CardContent className="p-8">
-                    <p className="text-muted-foreground mb-4">{tUniv('admissions.bachelors.intro')}</p>
-                    <p className="text-muted-foreground mb-4">{tUniv('admissions.bachelors.description')}</p>
-                    <p className="text-muted-foreground">{tUniv('admissions.bachelors.credits')}</p>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="masters">
-                <Card>
-                  <CardContent className="p-8">
-                    <p className="text-muted-foreground mb-4">{tUniv('admissions.masters.intro')}</p>
-                    <div className="grid md:grid-cols-2 gap-4 my-6">
-                      <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-4">
-                        <h4 className="font-semibold text-sm mb-2">{tUniv('admissions.masters.stat1.title')}</h4>
-                        <p className="text-xs text-muted-foreground">{tUniv('admissions.masters.stat1.description')}</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-xl p-4">
-                        <h4 className="font-semibold text-sm mb-2">{tUniv('admissions.masters.stat2.title')}</h4>
-                        <p className="text-xs text-muted-foreground">{tUniv('admissions.masters.stat2.description')}</p>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground">{tUniv('admissions.masters.excellence')}</p>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="phd">
-                <Card>
-                  <CardContent className="p-8">
-                    <p className="text-muted-foreground mb-4">{tUniv('admissions.phd.intro')}</p>
-                    <p className="text-muted-foreground mb-4">{tUniv('admissions.phd.research')}</p>
-                    <p className="text-muted-foreground">{tUniv('admissions.phd.structure')}</p>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            </Tabs>
+            <UniversityAdmissionsTabs />
           ) : null}
 
           <div className="grid lg:grid-cols-3 gap-12">

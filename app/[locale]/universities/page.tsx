@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from 'next-intl/server';
-import { GraduationCap, MapPin, Users, Award, ArrowRight } from "lucide-react";
+import { GraduationCap, MapPin, Users, Award, ArrowRight, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -150,169 +150,70 @@ export default async function UniversitiesPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
-          <SectionHeading
-            title={t('admissions.title')}
-            subtitle={t('admissions.subtitle')}
-            centered
-            className="mb-12"
-          />
-
-          <Tabs defaultValue="bachelors" className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-8">
-              <TabsTrigger value="bachelors">{t('admissions.bachelors.title')}</TabsTrigger>
-              <TabsTrigger value="masters">{t('admissions.masters.title')}</TabsTrigger>
-              <TabsTrigger value="phd">{t('admissions.phd.title')}</TabsTrigger>
-            </TabsList>
-
-            {/* Bachelor's Degree Tab */}
-            <TabsContent value="bachelors">
-              <Card>
-                <CardContent className="p-8 md:p-12">
-                  <div className="prose prose-lg max-w-none mb-8">
-                    <p className="text-muted-foreground mb-4">
-                      {t('admissions.bachelors.intro')}
-                    </p>
-                    <p className="text-muted-foreground mb-4">
-                      {t('admissions.bachelors.description')}
-                    </p>
-                    <p className="text-muted-foreground mb-6">
-                      {t('admissions.bachelors.credits')}
-                    </p>
-                  </div>
-                  
-                  <div className="bg-primary/5 rounded-xl p-6 mb-6">
-                    <h3 className="text-xl font-semibold mb-4">{t('admissions.bachelors.requirements.title')}</h3>
-                    <ul className="space-y-3">
-                      {[1, 2, 3].map((i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <span className="text-sm font-semibold text-primary">{i}</span>
-                          </div>
-                          <span className="text-muted-foreground">{t(`admissions.bachelors.requirements.item${i}`)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-sm text-muted-foreground mt-4 italic">{t('admissions.bachelors.requirements.note')}</p>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button asChild size="lg">
-                      <Link href="/services/university-admissions">
-                        {t('learnAdmissions')}
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    <Button asChild size="lg" variant="outline">
-                      <Link href="/apply">Book a Free Consultation</Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            {/* Master's Degree Tab */}
-            <TabsContent value="masters">
-              <Card>
-                <CardContent className="p-8 md:p-12">
-                  <div className="prose prose-lg max-w-none mb-8">
-                    <p className="text-muted-foreground mb-4">
-                      {t('admissions.masters.intro')}
-                    </p>
-                    
-                    <div className="grid md:grid-cols-2 gap-6 my-6">
-                      <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6">
-                        <h4 className="font-semibold mb-2">{t('admissions.masters.stat1.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('admissions.masters.stat1.description')}</p>
-                      </div>
-                      <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-xl p-6">
-                        <h4 className="font-semibold mb-2">{t('admissions.masters.stat2.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('admissions.masters.stat2.description')}</p>
-                      </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('admissions.title')}</h2>
+            <p className="text-xl text-muted-foreground mb-8">{t('admissions.subtitle')}</p>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <Link href="/services/university-admissions?tab=bachelors" className="block">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-8 pb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
+                      <GraduationCap className="h-8 w-8 text-red-600" />
                     </div>
-                    
-                    <p className="text-muted-foreground mb-6">
-                      {t('admissions.masters.excellence')}
-                    </p>
-                  </div>
-                  
-                  <div className="bg-primary/5 rounded-xl p-6 mb-6">
-                    <h3 className="text-xl font-semibold mb-4">{t('admissions.masters.requirements.title')}</h3>
-                    <ul className="space-y-3">
-                      {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <span className="text-sm font-semibold text-primary">{i}</span>
-                          </div>
-                          <span className="text-muted-foreground">{t(`admissions.masters.requirements.item${i}`)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-sm text-muted-foreground mt-4 italic">{t('admissions.masters.requirements.note')}</p>
-                  </div>
+                    <h3 className="text-xl font-semibold mb-2">{t('admissions.bachelors.title')}</h3>
+                    <p className="text-sm text-muted-foreground">4 years • 240 ECTS credits</p>
+                  </CardContent>
+                </Card>
+              </Link>
+              
+              <Link href="/services/university-admissions?tab=masters" className="block">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-8 pb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
+                      <BookOpen className="h-8 w-8 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{t('admissions.masters.title')}</h3>
+                    <p className="text-sm text-muted-foreground">1-2 years • Advanced specialization</p>
+                  </CardContent>
+                </Card>
+              </Link>
+              
+              <Link href="/services/university-admissions?tab=phd" className="block">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-8 pb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center mx-auto mb-4">
+                      <Award className="h-8 w-8 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{t('admissions.phd.title')}</h3>
+                    <p className="text-sm text-muted-foreground">3-4 years • Research & thesis</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
 
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button asChild size="lg">
-                      <Link href="/services/university-admissions">
-                        {t('learnAdmissions')}
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    <Button asChild size="lg" variant="outline">
-                      <Link href="/apply">Book a Free Consultation</Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            {/* Doctorate/PhD Tab */}
-            <TabsContent value="phd">
-              <Card>
-                <CardContent className="p-8 md:p-12">
-                  <div className="prose prose-lg max-w-none mb-8">
-                    <p className="text-muted-foreground mb-4">
-                      {t('admissions.phd.intro')}
-                    </p>
-                    <p className="text-muted-foreground mb-4">
-                      {t('admissions.phd.research')}
-                    </p>
-                    <p className="text-muted-foreground mb-6">
-                      {t('admissions.phd.structure')}
-                    </p>
-                  </div>
-                  
-                  <div className="bg-primary/5 rounded-xl p-6 mb-6">
-                    <h3 className="text-xl font-semibold mb-4">{t('admissions.phd.requirements.title')}</h3>
-                    <ul className="space-y-3">
-                      {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <span className="text-sm font-semibold text-primary">{i}</span>
-                          </div>
-                          <span className="text-muted-foreground">{t(`admissions.phd.requirements.item${i}`)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-sm text-muted-foreground mt-4 italic">{t('admissions.phd.requirements.note')}</p>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button asChild size="lg">
-                      <Link href="/services/university-admissions">
-                        {t('learnAdmissions')}
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    <Button asChild size="lg" variant="outline">
-                      <Link href="/apply">Book a Free Consultation</Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+            <Card className="bg-secondary/20 dark:bg-secondary/10 border-2 border-secondary/30 dark:border-secondary/20">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold mb-4">{t('admissions.ctaTitle')}</h3>
+                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                  {t('admissions.ctaDescription')}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600">
+                    <Link href="/services/university-admissions">
+                      {t('admissions.ctaButton')}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                  </Button>
+                  <Button asChild size="lg" variant="outline">
+                    <Link href="/apply">{t('admissions.ctaButtonSecondary')}</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 

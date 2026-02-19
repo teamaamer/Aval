@@ -483,7 +483,15 @@
           "item9": "Propuesta de tesis doctoral para presentación a supervisores",
           "note": "*Nota: Los cinco primeros documentos (1, 2, 3, 4 y 5) deben estar legalizados tanto por el Ministerio de Asuntos Exteriores como por el Consulado de España."
         }
-      }
+      },
+      "equivalency": {
+        "title": "Certificado de Equivalencia Académica",
+        "description": "Todos los documentos académicos extranjeros deben estar legalizados y obtener un certificado de equivalencia del Ministerio de Educación español. A continuación se muestra un ejemplo de cómo se ve el certificado."
+      },
+      "ctaTitle": "¿Listo para Comenzar tu Viaje Académico?",
+      "ctaDescription": "Descubre requisitos detallados, procesos de solicitud y todo lo que necesitas saber sobre estudiar en universidades españolas.",
+      "ctaButton": "Ver Guía Completa de Admisiones",
+      "ctaButtonSecondary": "Reservar Consulta Gratuita"
     }
   },
   "cta": {

@@ -842,7 +842,15 @@
           "item9": "A doctoral thesis proposal for presentation to supervisors",
           "note": "*Note: The first five documents (1, 2, 3, 4 and 5) must be legalized from both the Ministry of Foreign Affairs and the Spanish Consulate."
         }
-      }
+      },
+      "equivalency": {
+        "title": "Academic Equivalency Certificate",
+        "description": "All foreign academic documents must be legalized and obtain an equivalency certificate from the Spanish Ministry of Education. Below is an example of what the certificate looks like."
+      },
+      "ctaTitle": "Ready to Start Your Academic Journey?",
+      "ctaDescription": "Discover detailed requirements, application processes, and everything you need to know about studying at Spanish universities.",
+      "ctaButton": "View Complete Admissions Guide",
+      "ctaButtonSecondary": "Book Free Consultation"
     }
   },
   "cta": {
