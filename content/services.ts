@@ -471,7 +471,7 @@ export const services: Service[] = [
     category: "before-arrival",
     shortDescription: "Homologation service to validate your foreign qualifications in Spain.",
     iconName: "Award",
-    image: "/academic-equivalency.jpg",
+    image: "/certificate-equivalence.jpg",
     longDescription: "Homologation is the process by which the Spanish Ministry of Education recognizes that your secondary school or university qualifications are equivalent to Spanish qualifications. This is often required for university admission and professional practice.",
     bullets: [
       "Complete homologation application support",
